@@ -236,9 +236,9 @@ Reference websites:
 
 
 
-## Bootstrap 4, Templates, And Building Your Startup Landing Page
+## Bootstrap 4 & Templates
 
-##### [Bootstrap](https://getbootstrap.com/) : Search for Documentation
+### [Bootstrap](https://getbootstrap.com/) : Search for Documentation
 
 App for creating users list:
 *	[MailChimp](https://mailchimp.com)
