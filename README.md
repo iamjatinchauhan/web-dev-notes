@@ -28,7 +28,9 @@ Topics:
 	
 	
 	![FSD-Diagram](./FSD-Diagram.png)
-	<section align="center"> <b>Client Side VS Server Side</b></section>
+	<div align="center">
+	<p><b>Client Side VS Server Side</b></p>
+	</div>
 
 [Submarine Cable Map](https://www.submarinecablemap.com/)
 
