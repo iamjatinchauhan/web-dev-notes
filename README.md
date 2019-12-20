@@ -76,7 +76,7 @@ Reference websites:
 *	[StackOverFlow](https://stackoverflow.com/)
 
 
-******************************************************************************************
+
 ## Advanced HTML 5
 
 
@@ -98,9 +98,10 @@ Semantic Elements
 *	`<footer>`
 
 Topics:
-*	Chrome view Source
+*	Chrome View Source
 
-******************************************************************************************
+
+
 ## CSS
 
 Syntax:
@@ -180,15 +181,15 @@ Topics:
 *	Linking fonts and external stylesheets
 
 Exercises:
-*	https://flukeout.github.io/
+*	[Flukeout](https://flukeout.github.io/)
 
 Reference websites:
-*	https://css-tricks.com/
-*	https://www.supremo.co.uk/typeterms/
-*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-*	https://unsplash.com/
-* https://developer.mozilla.org/es/docs/Learn/CSS/Introduction_to_CSS/Cascada_y_herencia
-*	https://specificity.keegan.st/
+*	[Css Tricks](https://css-tricks.com/)
+*	[Type Terms](https://www.supremo.co.uk/typeterms/)
+*	[FlexBox - Css Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+*	[Unsplash - free usable images](https://unsplash.com/)
+* 	[Css Cascade&Inheritance - MDN Web docs](https://developer.mozilla.org/es/docs/Learn/CSS/Introduction_to_CSS/Cascada_y_herencia)
+*	[Specificity Calculator](https://specificity.keegan.st/)
 
 Website for color check:
 *	[Paletton](http://paletton.com/)
@@ -198,7 +199,7 @@ Website for fonts download:
 *	[Google Fonts](https://fonts.google.com/)
 
 
-******************************************************************************************
+
 ## Advanced CSS
 
 Flexbox
@@ -222,45 +223,42 @@ Properties
 
 Tools
 *	Chrome Toggle Device
-*	https://codepen.io/
+*	[CodePen](https://codepen.io/)
 
 Exercises:
 *	[Flexboxfroggy](http://flexboxfroggy.com/)
 
 Reference websites:
-*	https://caniuse.com/
-*	https://www.w3schools.com/cssref/css3_browsersupport.asp
-*	http://shouldiprefix.com/
-*	https://robots.thoughtbot.com/transitions-and-transforms
+*	[Can I use](https://caniuse.com/)
+*	[Browser Support - W3Schools](https://www.w3schools.com/cssref/css3_browsersupport.asp)
+*	[Should I Prefix](http://shouldiprefix.com/)
+*	[CSS Transitions and Transforms for Beginners](https://robots.thoughtbot.com/transitions-and-transforms)
 
 
-******************************************************************************************
+
 ## Bootstrap 4, Templates, And Building Your Startup Landing Page
 
+##### [Bootstrap](https://getbootstrap.com/) : Search for Documentation
 
 App for creating users list:
-*	https://mailchimp.com
+*	[MailChimp](https://mailchimp.com)
 
 
-Website with animation examples:
-*	https://daneden.github.io/animate.css
+Website with animation examples(Generating animated patterns):
+*	[Animate.Css](https://daneden.github.io/animate.css)
 
-Website for patterns:
-*	https://www.creative-tim.com/bootstrap-themes/ui-kit?direction=asc&sort=price
-*	http://mashup-template.com/templates.html
-*	https://startbootstrap.com/template-categories/all/
-*	https://mdbootstrap.com/freebies/
-*	https://www.creative-tim.com/
-
-
-Generating animated patterns:
-*	https://daneden.github.io/animate.css/
-
+Website for patterns + Templates:
+*	[Creative Tim - bootstrap themes](https://www.creative-tim.com/bootstrap-themes/ui-kit?direction=asc&sort=price)
+*	[MashUp](http://mashup-template.com/templates.html)
+*	[Startbootstrap](https://startbootstrap.com/template-categories/all/)
+*	[Mdbootstrap](https://mdbootstrap.com/freebies/)
+*	[Creative Tim](https://www.creative-tim.com/)
 
 Installing Github:
-*	https://desktop.github.com/
+*	[Github Desktop](https://desktop.github.com/)
 
-******************************************************************************************
+
+
 ## 9.	__CSS Grid + CSS Layout__
 
 Grid Cheat Sheet:
