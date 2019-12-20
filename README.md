@@ -1,5 +1,4 @@
 # CWDC-ZTM
-
 All resources and notes from the Complete Web Developer in 2020: Zero to Mastery course
 
 ## 	How The Internet Works
@@ -21,17 +20,20 @@ Topics:
 	<br>
 	__PC>GOOGLE SERVER --> **Files(html+css+js+...) to PC**__
 	
-	For Fast Transition between Browser and Google server
-	-Location of Server
-	-How many Trips
-	-Size of Files(html+css+js ..)
+	![Traceroute cmd](./Cmd-traceroute.png)
+	__For Fast Transition between Browser and Google server__
+	- Location of Server
+	- How many Trips
+	- Size of Files(html+css+js ..)
 	
 	
-	img
+	![Basic-FSD-Diagram](./Basic-FSD-Diagram.png)
 	**Client Side VS Server Side**
 
 [Submarine Cable Map](https://www.submarinecablemap.com/)
-******************************************************************************************
+
+
+
 ## 	History Of The Web
 
 [Maps that explain the Internet](https://www.vox.com/a/internet-maps)
@@ -43,7 +45,8 @@ Optional Videos:
 *	https://www.youtube.com/watch?v=AEaKrq3SpW8&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=30
 *	https://www.youtube.com/watch?v=guvsH5OFizE&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=31
 
-******************************************************************************************
+
+
 ##   HTML 5
 
 
