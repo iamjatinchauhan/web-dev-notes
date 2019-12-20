@@ -17,8 +17,8 @@ Topics:
 *	ISP, DNS and Servers
 *	Traceroute (Windows: tracert)
 
-	PC>ISP>DNS-->**PC**
-	PC>GOOGLE SERVER --> **Files(html+css+js+...) to PC**
+	__PC>ISP>DNS-->**PC**__
+	__PC>GOOGLE SERVER --> **Files(html+css+js+...) to PC**__
 	
 	For Fast Transition between Browser and Google server
 	-Location of Server
