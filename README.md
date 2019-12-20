@@ -304,9 +304,9 @@ FOR MAC OR LINUX:
 
 Command | Description
 --- | ---
-`ls`  | lists files and folders within working directory
-``pwd`` | show current working directory
-```cd```  | change working directory to user directory
+ls  | lists files and folders within working directory
+pwd | show current working directory
+cd  | change working directory to user directory
 cd .. | change working directory to direct parent directory
 clear | clear current terminal screen
 cd / | change current directory to root directory
@@ -328,20 +328,21 @@ say hello (only on Mac) | the mac will speak any text you enter after the 'say' 
 FOR WINDOWS:
 
 
-```cmd
-dir - list files
-cd {directory name} - change directory
-cd / - go to root (top) directory
-cd .. - go up a level
-mkdir {file name} - make a directory
-echo > {filename} - create an empty file
-del {filename} - remove a file
-rmdir {directory name} - remove a directory and all files within
-rename {filename} {new filename} - rename a file or folder
-start {filename} - open file in default program
-start . - open current directory
-cls - clear the terminal screen
-```
+cmd | What it does
+-- | --
+dir | list files
+cd {directory name} | change directory
+cd / | go to root (top) directory
+cd .. | go up a level
+mkdir {file name} | make a directory
+echo > {filename} | create an empty file
+del {filename} | remove a file
+rmdir {directory name} | remove a directory and all files within
+rename {filename} {new filename} | rename a file or folder
+start {filename} | open file in default program
+start . | open current directory
+cls | clear the terminal screen
+
 
 
 ******************************************************************************************
