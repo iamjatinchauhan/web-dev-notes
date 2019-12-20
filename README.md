@@ -27,7 +27,7 @@ Topics:
 	- Size of Files(html+css+js ..)
 	
 	
-	![Basic-FSD-Diagram](./Basic-FSD-Diagram.png)
+	![FSD-Diagram](./FSD-Diagram.png)
 	**Client Side VS Server Side**
 
 [Submarine Cable Map](https://www.submarinecablemap.com/)
