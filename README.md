@@ -2,7 +2,7 @@
 
 All resources and notes from the Complete Web Developer in 2020: Zero to Mastery course
 
-## 2.	How The Internet Works
+## 	How The Internet Works
 
 Tools:
 *	Developer Tools(Inspect Element)
@@ -11,15 +11,13 @@ Topics:
 *	ISP, DNS and Servers
 *	Traceroute (Windows: tracert)
 
-Submarine Cable Map(https://www.submarinecablemap.com/)
+[Submarine Cable Map](https://www.submarinecablemap.com/)
 ******************************************************************************************
-## 3.	__History Of The Web__
+## 	History Of The Web
 
-Maps that explain the Internet:
-*	https://www.vox.com/a/internet-maps
+[Maps that explain the Internet](https://www.vox.com/a/internet-maps)
 
-First Webpage in the world:
-*	http://info.cern.ch/hypertext/WWW/TheProject.html
+[First Webpage in the world](http://info.cern.ch/hypertext/WWW/TheProject.html)
 
 Optional Videos:
 *	https://www.youtube.com/watch?v=3QhU9jd03a0&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=29
@@ -27,13 +25,13 @@ Optional Videos:
 *	https://www.youtube.com/watch?v=guvsH5OFizE&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=31
 
 ******************************************************************************************
-## 4. __HTML 5__
+##   HTML 5
 
 
 Install a text editor (Select one):
-*	https://www.sublimetext.com/
-*	https://atom.io/
-*	https://code.visualstudio.com/
+*	[sublimetext](https://www.sublimetext.com/)
+*	[Atom](https://atom.io/)
+*	[VS Code](https://code.visualstudio.com/)
 
 Tags:
 *	`<html>`
@@ -51,18 +49,14 @@ Tags:
 Topics:
 *	Relative vs Absolute Path
 
-Zero to Mastery resources:
-*	https://github.com/zero-to-mastery/complete-web-developer-manual
-*	https://github.com/zero-to-mastery/zero-to-mastery-captions
-
 Reference websites:
-*	https://www.w3schools.com/
-*	https://developer.mozilla.org/en-US/
-*	https://stackoverflow.com/
+*	[W3 Schools](https://www.w3schools.com/)
+*	[MDN Web Docs](https://developer.mozilla.org/en-US/)
+*	[StackOverFlow](https://stackoverflow.com/)
 
 
 ******************************************************************************************
-## 5.	__Advanced HTML 5__
+## Advanced HTML 5
 
 
 Tags:
@@ -85,15 +79,8 @@ Semantic Elements
 Topics:
 *	Chrome view Source
 
-Resources:
-*	https://learn.freecodecamp.org/responsive-web-design/basic-html-and-html5
-*	https://waitbutwhy.com/
-
-> "__If you take one thing from this, it is this__: Don't worry if you don't feel 100% confident in HTML. Keep going as we will keep building on top of this knowledge."
-
-
 ******************************************************************************************
-## 6.	__CSS__
+## CSS
 
 Syntax:
 ```css
@@ -183,15 +170,15 @@ Reference websites:
 *	https://specificity.keegan.st/
 
 Website for color check:
-*	http://paletton.com/
-*	https://coolors.co/
+*	[Paletton](http://paletton.com/)
+*	[Coolors](https://coolors.co/)
 
 Website for fonts download:
-*	https://fonts.google.com/
+*	[Google Fonts](https://fonts.google.com/)
 
 
 ******************************************************************************************
-## 7.	__Advanced CSS__
+## Advanced CSS
 
 Flexbox
 *	`display: flex`
@@ -215,7 +202,7 @@ Tools
 *	https://codepen.io/
 
 Exercises:
-*	http://flexboxfroggy.com/
+*	[Flexboxfroggy](http://flexboxfroggy.com/)
 
 Reference websites:
 *	https://caniuse.com/
@@ -223,10 +210,9 @@ Reference websites:
 *	http://shouldiprefix.com/
 *	https://robots.thoughtbot.com/transitions-and-transforms
 
-> __If you take one thing from this, it is this__: Don't worry if you don't feel 100% confident in CSS. Keep going as we will keep building on top of this knowledge.
 
 ******************************************************************************************
-## 8.	__Bootstrap 4, Templates, And Building Your Startup Landing Page__
+## Bootstrap 4, Templates, And Building Your Startup Landing Page
 
 
 App for creating users list:
