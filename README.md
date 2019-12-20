@@ -32,15 +32,15 @@ Topics:
 	<p><b>Client Side VS Server Side</b></p>
 	</div>
 
-[Submarine Cable Map](https://www.submarinecablemap.com/)
+*   [Submarine Cable Map](https://www.submarinecablemap.com/)
 
 
 
 ## 	History Of The Web
 
-[Maps that explain the Internet](https://www.vox.com/a/internet-maps)
+*    [Maps that explain the Internet](https://www.vox.com/a/internet-maps)
 
-[First Webpage in the world](http://info.cern.ch/hypertext/WWW/TheProject.html)
+*    [First Webpage in the world](http://info.cern.ch/hypertext/WWW/TheProject.html)
 
 Optional Videos:
 *	https://www.youtube.com/watch?v=3QhU9jd03a0&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=29
