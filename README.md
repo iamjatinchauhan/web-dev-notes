@@ -218,6 +218,8 @@ Properties
 *	`transform`
 *	`box-shadow`
 
+![Flexbox-Cheatsheet](./Flexbox-CheatSheet.png)
+
 Tools
 *	Chrome Toggle Device
 *	https://codepen.io/
