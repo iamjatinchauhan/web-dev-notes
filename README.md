@@ -304,9 +304,9 @@ FOR MAC OR LINUX:
 
 Command | Description
 --- | ---
-ls  | lists files and folders within working directory
-pwd | show current working directory
-cd  | change working directory to user directory
+`ls`  | lists files and folders within working directory
+``pwd`` | show current working directory
+```cd```  | change working directory to user directory
 cd .. | change working directory to direct parent directory
 clear | clear current terminal screen
 cd / | change current directory to root directory
