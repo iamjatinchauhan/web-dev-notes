@@ -9,13 +9,25 @@ Tools:
 
 	```
 	Cmd Prompt
-	tracert //generally shows for IPv6
-	tracert-4 www.google.com  //Forces IPv4 Hops
+	tracert                          //generally shows for IPv6
+	tracert-4 www.google.com         //Forces IPv4 Hops
 	```
 	
 Topics:
 *	ISP, DNS and Servers
 *	Traceroute (Windows: tracert)
+
+	PC>ISP>DNS-->**PC**
+	PC>GOOGLE SERVER --> **Files(html+css+js+...) to PC**
+	
+	For Fast Transition between Browser and Google server
+	-Location of Server
+	-How many Trips
+	-Size of Files(html+css+js ..)
+	
+	
+	img
+	**Client Side VS Server Side**
 
 [Submarine Cable Map](https://www.submarinecablemap.com/)
 ******************************************************************************************
