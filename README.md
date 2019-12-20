@@ -299,7 +299,7 @@ Reference websites:
 
 
 
-FOR MAC OR LINUX:
+### FOR MAC OR LINUX:
 
 
 Command | Description
@@ -325,7 +325,7 @@ rm -r foldername | used to delete folders. In this case 'foldername' will be del
 say hello (only on Mac) | the mac will speak any text you enter after the 'say' keyword
 
 
-FOR WINDOWS:
+### FOR WINDOWS:
 
 
 cmd | What it does
@@ -345,7 +345,6 @@ cls | clear the terminal screen
 
 
 
-******************************************************************************************
 ## 15.	__Developer Environment__
 
 Popular code editors:
@@ -353,7 +352,8 @@ Popular code editors:
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Atom](https://atom.io/)
 
-******************************************************************************************
+
+
 ## 16.	__Git + Github + Open Source Projects__
 
 
