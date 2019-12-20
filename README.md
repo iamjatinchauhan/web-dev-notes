@@ -7,6 +7,12 @@ All resources and notes from the Complete Web Developer in 2020: Zero to Mastery
 Tools:
 *	Developer Tools(Inspect Element)
 
+	```
+	Cmd Prompt
+	tracert //generally shows for IPv6
+	tracert-4 www.google.com  //Forces IPv4 Hops
+	```
+	
 Topics:
 *	ISP, DNS and Servers
 *	Traceroute (Windows: tracert)
