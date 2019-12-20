@@ -2,7 +2,7 @@
 
 All resources and notes from the Complete Web Developer in 2020: Zero to Mastery course
 
-## 2.	__How The Internet Works__
+## 2.	How The Internet Works
 
 Tools:
 *	Developer Tools(Inspect Element)
