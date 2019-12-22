@@ -259,7 +259,9 @@ Installing Github:
 
 
 
-## 9.	__CSS Grid + CSS Layout__
+## 9.	CSS Grid + CSS Layout
+
+![Grid-Layout-Cheatsheet](./Grid-Layout-Cheatsheet.png)
 
 Grid Cheat Sheet:
 *	http://grid.malven.co/
