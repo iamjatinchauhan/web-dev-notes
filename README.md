@@ -259,7 +259,7 @@ Installing Github:
 
 
 
-## 9.	CSS Grid + CSS Layout
+## 	CSS Grid + CSS Layout
 
 ![Grid-Layout-Cheatsheet](./Grid-Layout-Cheatsheet.png)
 
