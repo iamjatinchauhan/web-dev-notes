@@ -264,13 +264,13 @@ Installing Github:
 ![Grid-Layout-Cheatsheet](./Grid-Layout-Cheatsheet.png)
 
 Grid Cheat Sheet:
-*	http://grid.malven.co/
+*	[Grid Malven](http://grid.malven.co/)
 
-Grid Garden:
-*	https://cssgridgarden.com/
+Exercise:
+*	[Grid Garden](https://cssgridgarden.com/)
 
 Free Design resources:
-*	https://interfacer.xyz/
+*	[Interfacer](https://interfacer.xyz/)
 
 ******************************************************************************************
 ## 10.	__Career Of A Web Developer__
