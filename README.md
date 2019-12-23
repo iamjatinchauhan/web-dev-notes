@@ -266,6 +266,15 @@ Installing Github:
 Cheat Sheet:
 *	[Grid Malven](http://grid.malven.co/)
 *	[Media Queries](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/#phone-queries)
+	* Example
+```css
+	@media only screen and (max-width : 600px){
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+```
 
 **Normalize css** - provides better cross-browser consistency in the default styling of HTML elements. 
 Exercise:
