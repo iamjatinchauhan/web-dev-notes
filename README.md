@@ -263,8 +263,9 @@ Installing Github:
 
 ![Grid-Layout-Cheatsheet](./Grid-Layout-Cheatsheet.png)
 
-Grid Cheat Sheet:
+Cheat Sheet:
 *	[Grid Malven](http://grid.malven.co/)
+*	[Media Queries](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/#phone-queries)
 
 Exercise:
 *	[Grid Garden](https://cssgridgarden.com/)
