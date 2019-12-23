@@ -275,13 +275,14 @@ Cheat Sheet:
     }
 }
 ```
-
+**Viewport Height `(vh)`** — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height.
 **Normalize css** - provides better cross-browser consistency in the default styling of HTML elements. 
 Exercise:
 *	[Grid Garden](https://cssgridgarden.com/)
 
-Free Design resources:
-*	[Interfacer](https://interfacer.xyz/)
+Free Design & Illustration resources:
+*	[Interfacer - high quality free design resources](https://interfacer.xyz/)
+*	[Undraw - Open-source illustrations](https://undraw.co/)
 
 ******************************************************************************************
 ## 10.	__Career Of A Web Developer__
