@@ -268,7 +268,7 @@ Cheat Sheet:
 *	[Media Queries](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/#phone-queries)
 	* Example
 ```css
-	@media only screen and (max-width : 600px){
+@media only screen and (max-width : 600px){
     .main-nav{
         font-size: 0.5em;
         padding: 0;
