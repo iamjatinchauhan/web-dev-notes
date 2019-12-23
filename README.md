@@ -267,6 +267,7 @@ Cheat Sheet:
 *	[Grid Malven](http://grid.malven.co/)
 *	[Media Queries](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/#phone-queries)
 
+**Normalize css** - provides better cross-browser consistency in the default styling of HTML elements. 
 Exercise:
 *	[Grid Garden](https://cssgridgarden.com/)
 
