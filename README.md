@@ -292,20 +292,23 @@ Free Design & Illustration resources:
 **JAVASCRIPT TYPES**
 1. Number
 ```
-> 10+2
+> 10 + 2
 > 12
 ---
-> 10-2
+> 10 - 2
 > 8
 ---
-> 2*2
+> 2 * 2
 > 4
 ---
-> 10/2
+> 10 / 2
 > 5
 ---
-> 10%3
+> 10 % 3
 > 1
+---
+> 5 % 10 
+> 5
 ```
 2. String
 ```
@@ -348,6 +351,16 @@ X error
 ---
 > 3!==3
 > false
+```
+```
+true + true  //  2
+true + false //  1
+false + true //  1
+false - true //  -1
+"A" > "B" //  false
+"B" < "C" //  true
+"a" > "A" //  true
+"b" < "A" //  false
 ```
 4. Undefined
 5. Null
