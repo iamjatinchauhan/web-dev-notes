@@ -290,104 +290,138 @@ Free Design & Illustration resources:
 ## Javascript
 
 JAVASCRIPT TYPES
------------------
-1. Number 
+1. Number
+```
+> 10+2
+> 12
+---
+> 10-2
+> 8
+---
+> 2*2
+> 4
+---
+> 10/2
+> 5
+---
+> 10%3
+> 1
+```
 2. String
+```
+>"Hello" + "world!"
+>"Helloworld1
+---
+>"Hello " + "world!"
+>"Hello world1
+---
+>'This isn\'t very nice'
+>"This isn't very nice"
+---
+>10 + "34"
+>"1034"
+---
+>10 - "7"
+>3
+>"hello" - "bye"
+>NaN     //means not a number
+```
 3. Boolean
+```
+>true
+>false
+---
+> 3 > 2
+>> true
+```
 4. Undefined
 5. Null
-<!-- 6. Symbol (new in ECMAScript 6) -->
+6. Symbol (new in ECMAScript 6)
 7. Object
+  > `clear()` to clear up the console
 
 JAVASCRIPT COMPARISONS
------------------
-
-!==
-===
->=
-<=
->
-<
+`!==`
+`===`
+`>=`
+`<=`
+`>`
+`<`
 
 JAVASCRIPT VARIABLES
------------------
 var
-<!-- let (new in ECMAScript 6)-->  
-<!-- const (new in ECMAScript 6)-->
+`let (new in ECMAScript 6)`
+`const (new in ECMAScript 6)`
 
 JAVASCRIPT CONDITIONALS
------------------
-if
-else
-else if
-<!-- ternary operator -->
-<!-- switch -->
+`if`
+`else`
+`else if`
+`ternary operator`
+`switch`
 
 
 JAVASCRIPT LOGICAL OPERATORS
------------------
-&&
-||
-!
+`&&`
+`||`
+`!`
 
 JAVASCRIPT FUNCTIONS
------------------
+```
 var a = function name() {}
 function name() {}
 return
 <!-- () => (new in ECMAScript 6) -->
+```
 
 JAVASCRIPT DATA STRUCTURES
------------------
-Array
-Object
+* Array
+* Object
 
 JAVASCRIPT LOOPING
------------------
-for
-while
-do 
-forEach (new in ECMAScript 5) 
+* for
+* while
+* do 
+* forEach (new in ECMAScript 5) 
 
 
 JAVASCRIPT KEYWORDS
------------------
-break
-case
-catch
-class
-const
-continue
-debugger
-default
-delete
-do
-else
-export
-extends
-finally
-for
-function
-if
-import
-in
-instanceof
-new
-return
-super
-switch
-this
-throw
-try
-typeof
-var
-void
-while
-with
-yield
+`break`
+`case`
+`catch`
+`class`
+`const`
+`continue`
+`debugger`
+`default`
+`delete`
+`do`
+`else`
+`export`
+`extends`
+`finally`
+`for`
+`function`
+`if`
+`import`
+`in`
+`instanceof`
+`new`
+`return`
+`super`
+`switch`
+`this`
+`throw`
+`try`
+`typeof`
+`var`
+`void`
+`while`
+`with`
+`yield`
 
-******************************************************************************************
-## 12.	__DOM Manipulation__
+
+## 12.	DOM Manipulation
 
 
 
