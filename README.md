@@ -289,7 +289,7 @@ Free Design & Illustration resources:
 
 ## Javascript
 
-JAVASCRIPT TYPES
+**JAVASCRIPT TYPES**
 1. Number
 ```
 > 10+2
@@ -355,7 +355,7 @@ X error
 7. Object
   > `clear()` to clear up the console
 
-JAVASCRIPT COMPARISONS
+**JAVASCRIPT COMPARISONS**
 `!==`
 `===`
 `>=`
@@ -363,12 +363,12 @@ JAVASCRIPT COMPARISONS
 `>`
 `<`
 
-JAVASCRIPT VARIABLES
-var
-`let (new in ECMAScript 6)`
-`const (new in ECMAScript 6)`
+**JAVASCRIPT VARIABLES**
+* `var`
+* `let` (new in ECMAScript 6)
+* `const` (new in ECMAScript 6)
 
-JAVASCRIPT CONDITIONALS
+**JAVASCRIPT CONDITIONALS**
 `if`
 `else`
 `else if`
@@ -376,12 +376,12 @@ JAVASCRIPT CONDITIONALS
 `switch`
 
 
-JAVASCRIPT LOGICAL OPERATORS
+**JAVASCRIPT LOGICAL OPERATORS**
 `&&`
 `||`
 `!`
 
-JAVASCRIPT FUNCTIONS
+**JAVASCRIPT FUNCTIONS**
 ```
 var a = function name() {}
 function name() {}
@@ -389,18 +389,18 @@ return
 <!-- () => (new in ECMAScript 6) -->
 ```
 
-JAVASCRIPT DATA STRUCTURES
+**JAVASCRIPT DATA STRUCTURES**
 * Array
 * Object
 
-JAVASCRIPT LOOPING
-* for
-* while
-* do 
-* forEach (new in ECMAScript 5) 
+**JAVASCRIPT LOOPING**
+* `for`
+* `while`
+* `do` 
+* `forEach` (new in ECMAScript 5) 
 
 
-JAVASCRIPT KEYWORDS
+**JAVASCRIPT KEYWORDS**
 `break`
 `case`
 `catch`
