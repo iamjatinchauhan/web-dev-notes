@@ -309,30 +309,45 @@ JAVASCRIPT TYPES
 ```
 2. String
 ```
->"Hello" + "world!"
->"Helloworld1
+> "Hello" + "world!"
+> "Helloworld1
 ---
->"Hello " + "world!"
->"Hello world1
+> "Hello " + "world!"
+> "Hello world1
 ---
->'This isn\'t very nice'
->"This isn't very nice"
+> 'This isn\'t very nice'
+> "This isn't very nice"
 ---
->10 + "34"
->"1034"
+> 10 + "34"
+> "1034"
 ---
->10 - "7"
->3
->"hello" - "bye"
->NaN     //means not a number
+> 10 - "7"
+> 3
+> "hello" - "bye"
+> NaN     //means not a number
 ```
 3. Boolean
 ```
->true
->false
+> true
+> false
 ---
 > 3 > 2
->> true
+> true
+---
+> 5>=5
+> true
+---
+> 5<=5
+> true
+---
+> 3 = 3
+X error
+---
+> 3 === 3
+> true
+---
+> 3!==3
+> false
 ```
 4. Undefined
 5. Null
