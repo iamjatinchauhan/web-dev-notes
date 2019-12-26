@@ -353,14 +353,14 @@ X error
 > false
 ```
 ```
-true + true  //  2
-true + false //  1
-false + true //  1
-false - true //  -1
-"A" > "B" //  false
-"B" < "C" //  true
-"a" > "A" //  true
-"b" < "A" //  false
+true + true    //  2
+true + false   //  1
+false + true   //  1
+false - true   //  -1
+"A" > "B"      //  false
+"B" < "C"      //  true
+"a" > "A"      //  true
+"b" < "A"      //  false
 ```
 4. Undefined
 ```
