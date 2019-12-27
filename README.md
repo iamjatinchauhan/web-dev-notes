@@ -424,11 +424,10 @@ name("Rob");
 * Array
 * Object
 
-==Array methods==
+**Array methods**
 
-::: warning
-*here be dragons*
-:::
+> [!WARNING]
+> Dangerous certain consequences of an action.
 
 |Method 	|Description|
 |-|-|
