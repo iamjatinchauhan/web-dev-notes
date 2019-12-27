@@ -293,7 +293,7 @@ Free Design & Illustration resources:
 **JAVASCRIPT TYPES**
 1. Number
 ```
-> 10 + 2
+> 10 + 2    //expression
 > 12
 ---
 > 10 - 2
@@ -404,9 +404,9 @@ ___________
 
 **JAVASCRIPT FUNCTIONS**
 ```
-var a = function name() {}
+var a = function name() {};   //function expression
 ---------------
-function name() {}
+function name() {}    //function declaration
 return
 ---------------
 function name(parameter) {
@@ -505,7 +505,7 @@ name("Rob");
 `prompt`
 `alert`
 
-**DRY** - Do not Repeat Yourself
+**DRY** - *Do not Repeat Yourself*
 
 
 ## 12.	DOM Manipulation
