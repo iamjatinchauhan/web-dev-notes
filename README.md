@@ -422,6 +422,7 @@ name("Rob");
 
 **JAVASCRIPT DATA STRUCTURES**
 * Array
+
 |Array |methods|
 |-|-|
 |Method 	|Description|
