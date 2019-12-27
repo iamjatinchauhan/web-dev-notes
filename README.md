@@ -426,9 +426,6 @@ name("Rob");
 
 **Array methods**
 
-> [!WARNING]
-> Dangerous certain consequences of an action.
-
 |Method 	|Description|
 |-|-|
 |concat()| 	Joins two or more arrays, and returns a copy of the joined arrays|
