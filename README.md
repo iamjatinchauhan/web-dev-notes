@@ -131,6 +131,7 @@ How to:
 
 Tools:
 *	Chrome Inspector
+*	Css Minify - Compacting CSS code can save many bytes of data and speed up downloading, parsing, and execution time.
 
 Properties:
 *	text-align
@@ -404,10 +405,20 @@ ___________
 **JAVASCRIPT FUNCTIONS**
 ```
 var a = function name() {}
+---------------
 function name() {}
 return
+---------------
+function name(parameter) {
+console.log("name is :" + parameter);
+}
+
+name("steve");   //to call a function
+name("Rob");
+---------------
 <!-- () => (new in ECMAScript 6) -->
 ```
+> `console. log()` is a function in JavaScript which is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.
 
 **JAVASCRIPT DATA STRUCTURES**
 * Array
@@ -418,7 +429,6 @@ return
 * `while`
 * `do` 
 * `forEach` (new in ECMAScript 5) 
-
 
 **JAVASCRIPT KEYWORDS**
 `break`
@@ -454,6 +464,12 @@ return
 `while`
 `with`
 `yield`
+
+**JAVASCRIPT POPUP BOXES**
+`prompt`
+`alert`
+
+**DRY** - Do not Repeat Yourself
 
 
 ## 12.	DOM Manipulation
