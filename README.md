@@ -422,8 +422,10 @@ name("Rob");
 
 **JAVASCRIPT DATA STRUCTURES**
 * Array
+* Object
 
-|Array |methods|
+> **_NOTE:_**  Array methods.
+
 |-|-|
 |Method 	|Description|
 |concat()| 	Joins two or more arrays, and returns a copy of the joined arrays|
@@ -457,7 +459,6 @@ name("Rob");
 |unshift()| 	Adds new elements to the beginning of an array, and returns the new length|
 |valueOf()| 	Returns the primitive value of an array|
 
-* Object
 
 **JAVASCRIPT LOOPING**
 * `for`
