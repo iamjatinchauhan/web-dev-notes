@@ -424,10 +424,14 @@ name("Rob");
 * Array
 * Object
 
-> **_NOTE:_**  Array methods.
+==Array methods==
 
-|-|-|
+::: warning
+*here be dragons*
+:::
+
 |Method 	|Description|
+|-|-|
 |concat()| 	Joins two or more arrays, and returns a copy of the joined arrays|
 |copyWithin()| 	Copies array elements within the array, to and from specified positions|
 |entries()| 	Returns a key/value pair Array Iteration Object|
