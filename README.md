@@ -514,7 +514,7 @@ When a web page is loaded, the browser creates a Document Object Model of the pa
 *	`document.write()`
 *	`window.alert()`
 
-** DOM Selectors**
+**DOM Selectors**
 
 *	`getElementsByTagName`
 *	`getElementsByClassName`
