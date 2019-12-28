@@ -510,38 +510,57 @@ name("Rob");
 
 ## DOM Manipulation
 When a web page is loaded, the browser creates a Document Object Model of the page.  
-*	document.write()
-*	window.alert()
 
-DOM Selectors
+*	`document.write()`
+*	`window.alert()`
+
+** DOM Selectors**
+
+*	`getElementsByTagName`
+*	`getElementsByClassName`
+*	`getElementById`
+
+*	`querySelector`
+*	`querySelectorAll`
+
+*	`getAttribute`
+*	`setAttribute`
+
+```
+/* Example */
+---------------
+document.querySelector("li").getAttribute("random");
+---------------
+document.querySelector("li").setAttribute("random","1000");
+```
+**Changing Styles**
+*	`style.{property}` //ok
+
+*	`className` //best
+*	`classList` //best
+
+	*	`classList.add`
+	*	`classList.remove`
+	*	`classList.toggle`
+	
 ```javascript
-getElementsByTagName
-getElementsByClassName
-getElementById
+document.querySelector("li").classList.toggle(  "classname"  );
+```
 
-querySelector
-querySelectorAll
+**Bonus**
+*	`innerHTML` //DANGEROUS
 
-getAttribute
-setAttribute
+*	parentElement
+*	children
 
-##Changing Styles
-style.{property} //ok
+```javascript
+document.querySelectorAll("li")[1].parentElement.parentElement.children;
+```
 
-className //best
-classList //best
-
-classList.add
-classList.remove
-classList.toggle
-
-##Bonus
-innerHTML //DANGEROUS
-
-parentElement
-children
-
-##It is important to CACHE selectors in variables
+> It is important to CACHE selectors in variables
+```javascript
+var h1 = document.querySelector("h1");
+/*anytime user need to use h1 , the browser doesn't have to look to DOM find h1 then store in the  memory.*/
 ```
 
 Reference websites:
