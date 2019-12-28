@@ -403,17 +403,17 @@ ___________
 `!`
 
 **JAVASCRIPT FUNCTIONS**
-```
+```javascript
 var a = function name() {};   //function expression
 ---------------
-function name() {}    //function declaration
+function name() {}            //function declaration
 return
 ---------------
 function name(parameter) {
 console.log("name is :" + parameter);
 }
 
-name("steve");   //to call a function
+name("steve");                //to call a function
 name("Rob");
 ---------------
 <!-- () => (new in ECMAScript 6) -->
@@ -526,7 +526,7 @@ When a web page is loaded, the browser creates a Document Object Model of the pa
 *	`getAttribute`
 *	`setAttribute`
 
-```
+```javascript
 /* Example */
 ---------------
 document.querySelector("li").getAttribute("random");
