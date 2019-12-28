@@ -560,7 +560,7 @@ document.querySelectorAll("li")[1].parentElement.parentElement.children;
 > It is important to CACHE selectors in variables
 ```javascript
 var h1 = document.querySelector("h1");
-/*anytime user need to use h1 , the browser doesn't have to look to DOM find h1 then store in the  memory.*/
+//anytime user need to use h1, the browser doesn't have to look to DOM find h1 then store in the memory.
 ```
 
 Reference websites:
