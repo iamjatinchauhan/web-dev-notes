@@ -508,9 +508,41 @@ name("Rob");
 **DRY** - *Do not Repeat Yourself*
 
 
-## 12.	DOM Manipulation
+## DOM Manipulation
+When a web page is loaded, the browser creates a Document Object Model of the page.  
+*	document.write()
+*	window.alert()
 
+DOM Selectors
+```javascript
+getElementsByTagName
+getElementsByClassName
+getElementById
 
+querySelector
+querySelectorAll
+
+getAttribute
+setAttribute
+
+##Changing Styles
+style.{property} //ok
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+##Bonus
+innerHTML //DANGEROUS
+
+parentElement
+children
+
+##It is important to CACHE selectors in variables
+```
 
 Reference websites:
 *	https://developer.mozilla.org/en-US/docs/web/Events
