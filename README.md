@@ -563,14 +563,15 @@ var h1 = document.querySelector("h1");
 //anytime user need to use h1, the browser doesn't have to look to DOM find h1 then store in the memory.
 ```
 
-Reference websites:
-*	https://developer.mozilla.org/en-US/docs/web/Events
-*	https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
-*	https://jquery.com/
-*	http://youmightnotneedjquery.com/
-*	https://babeljs.io/
+*	`<Button>`
 
-******************************************************************************************
+Reference websites:
+*	[Event reference](https://developer.mozilla.org/en-US/docs/web/Events)
+*	[Javascript Char Codes -Key Codes](https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes)
+*	[JQuery](https://jquery.com/)
+*	[you might not need jquery](http://youmightnotneedjquery.com/)
+*	[Babel - JavaScript compiler](https://babeljs.io/)
+
 ## 13.	__Advanced Javascript__
 ******************************************************************************************
 
