@@ -85,7 +85,7 @@ Tags:
 	*	`method`, `action`
 *	`<input>`:
 	*	`type`= `"text"`, `"submit"`, `"reset"`, `"email"`, `"date"`, `"radio"`, `"password"`
-	*	`required`, `value`, `name`, `min`
+	*	`required`, `value`, `name`, `min`, `placeholder`
 *	dropdown `<select>`
 	*	option `<option>`
 *	comment `<!-- -->`
@@ -563,7 +563,31 @@ var h1 = document.querySelector("h1");
 //anytime user need to use h1, the browser doesn't have to look to DOM find h1 then store in the memory.
 ```
 
+**Events**
 *	`<Button>`
+*	`addEventListener`
+	*	`click`
+	*	`mouseenter`
+	*	`mouseleave`
+*	`document.createElement("li")`
+
+```javascript
+//Example
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
+
+button.addEventListener("click", function() {
+	if(input.value > 0) {
+		console.log(input.value);
+		var li = document.createElement("li");
+		li.appendChild(document.createTextNode(input.value));
+		ul.appendChild(li);
+		input.value = "";
+	}
+)};	
+```
+
 
 Reference websites:
 *	[Event reference](https://developer.mozilla.org/en-US/docs/web/Events)
@@ -572,11 +596,11 @@ Reference websites:
 *	[you might not need jquery](http://youmightnotneedjquery.com/)
 *	[Babel - JavaScript compiler](https://babeljs.io/)
 
-## 13.	__Advanced Javascript__
-******************************************************************************************
+## 	__Advanced Javascript__
 
-******************************************************************************************
-## 14. __Command Line__
+
+
+##  __Command Line__
 
 
 
