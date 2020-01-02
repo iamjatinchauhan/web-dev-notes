@@ -393,7 +393,7 @@ ___________
 `if`
 `else`
 `else if`
-`ternary operator`
+`ternary operator`  // condition ? exp1 : exp2;
 `switch`
 
 
@@ -596,9 +596,23 @@ Reference websites:
 *	[you might not need jquery](http://youmightnotneedjquery.com/)
 *	[Babel - JavaScript compiler](https://babeljs.io/)
 
+**Declarative programming** is a programming paradigm … that expresses the logic of a computation without describing its control flow.  
+**Imperative programming** is a programming paradigm that uses statements that change a program’s state.
+
 ## 	__Advanced Javascript__
 
+*	Scope
+```javascript
+//Root Scope(window)
+var fun = 5;
+function funestFunction(){
+	//child scope
+	console.log(fun);
+}
+```
 
+* ECMAScript6 and Javascript
+> JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript. JavaScript is considered as one of the most popular implementations of ECMAScript.
 
 ##  __Command Line__
 
