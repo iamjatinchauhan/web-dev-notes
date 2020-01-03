@@ -614,6 +614,102 @@ function funestFunction(){
 * ECMAScript6 and Javascript
 > JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript. JavaScript is considered as one of the most popular implementations of ECMAScript.
 
+*	let + const
+```javascript
+const player = 'booby';
+let experience = 100;
+let wizardLevel = false;
+
+if(experience > 90) {
+	let wizardLevel = true;
+	console.log('inside', wizardLevel);  //inside true
+}
+
+console.log('outside', wizardLevel);         //outside true
+```
+
+*	Destructuring
+```
+const obj = {
+	player: 'bobby';
+	experience : 100;
+	wizarLevel : false
+}
+/*
+const player = obj.player;
+const experince = obj.experience;
+let wizardLevel = obj.wizardLevel;
+*/
+// Below is same as above
+const{player, experience } = obj;
+let {wizardLevel } = obj;
+```
+
+*	Object Properties
+```javascript
+const a = "simon";
+const b = true;
+const c = {};
+
+const obj = {
+	a:a, b:b, c:c
+	/* a, b, c */
+}
+```
+
+*	Template strings
+```
+>	const name = "Sally";
+	const age = 34;
+	const pet = "horse";
+
+	/* const greetingBest = "Hello " + name + " you seem to be doing " + greeting + "!" */
+
+	const greetingBest = `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have`
+	
+-------------------------------------------
+>	greetingBest
+//	"Hello Sally you seem to be 24. What a lovely horse you have"
+```
+
+*	default arguments
+
+*	Symbol
+```
+>	let sym1 = Symbol();
+	let sym2 = Symbol('foo');
+	let sym3 = Symbol('foo');
+-------------------------------------------
+>	sym1
+//	Symbol()
+-------------------------------------------
+>	sym2
+//	Symbol(foo)
+-------------------------------------------
+>	sym3
+//	Symbol(foo)
+-------------------------------------------
+>	sym2 === sym3
+//	false
+```
+
+*	arrow function
+```
+>	function add(a, b) {
+		return a+b;
+	}
+	//can be written as
+	const add2 = (a,b) => a + b;
+-------------------------------------------	
+>	add(4,2);
+//	6
+-------------------------------------------
+>	add2(4,2);
+//	6
+```
+
+
+
 ##  __Command Line__
 
 
