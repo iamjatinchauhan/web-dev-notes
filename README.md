@@ -650,10 +650,13 @@ let {wizardLevel } = obj;
 const a = "simon";
 const b = true;
 const c = {};
-
+/*
 const obj = {
 	a:a, b:b, c:c
-	/* a, b, c */
+}
+*/
+const obj = {
+	a, b, c
 }
 ```
 
@@ -708,6 +711,78 @@ const obj = {
 //	6
 ```
 
+*	__Advanced function__
+```javascript
+/*
+function first() {
+	var greet = 'Hi';
+	function second() {
+		alert(great);
+	}
+	return second;
+}
+
+var newFunc = first();
+newFunc();
+*/
+
+const first = () => {
+	const greet = 'Hi';
+	const second = () =>{
+		alert(greet);
+	}
+	return second;
+}
+
+const newFunc = first();
+newFunc();
+```
+
+*	Closures
+*child scope always has access to parent scope*  
+Closures - a function ran. the function executed. It's never going to be execute again.
+BUT it's going to remember that there are refernces to those variables.
+so the child scope always has access to the parent scope.
+
+*	Currying
+The process of converting a function that takes multiple arguments into a function that takes them one at a time.  
+```
+>	const multiply = (a, b) => a * b;
+	const curriedMultiply = (a) => (b) => a * b;
+-------------------------------------------	
+>	curriedMultiply(3);
+//	(b) => a * b
+-------------------------------------------	
+>	curriedMultiply(3)(4);   /*a is 3, b is 4*/
+//	12
+--------------------------------------------------------------------------------------	
+--------------------------------------------------------------------------------------  
+>	const curriedMultiply = (a) => (b) => a * b;
+	const multiplyBy5 = curriedMultiply(5);
+-------------------------------------------	
+>	multiplyBy5(5);
+//	25
+-------------------------------------------	
+>	multiplyBy5(11);
+//	55
+
+```
+
+*	Compose
+act of putting two function together to form a third function where the output of one function is input of another function.  
+```
+const compose = (f,g) => (a) => f(g(a));
+// f(g(a))  ->  f(sum(a))  ->  f(6)  -> sum(6)  ->  7
+const sum = (num) => num + 1;
+
+compose(sum, sum)(5);    //7
+```
+
+*	Avoiding side Effects, functional purity.   (GOOD PRACTICE)
+
+Q. What are the two elements of a pure function?  
+1. Deterministic --> always produces the same results given the same inputs  
+2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.
 
 
 ##  __Command Line__
