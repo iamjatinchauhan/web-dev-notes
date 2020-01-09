@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>facebook-2 exercise.</title>
+</head>
+<body>
+    <script>
+        var database = [
+            {
+                username: "andrei",
+                password: "supersecret"
+            },
+            {
+                username: "sammy",
+                password: "goofy"
+            },
+            {
+                username: "steve",
+                password: "sazam"
+            }
+        ];
+
+        var newsfeed = [
+            {
+                username: "Bobby",
+                timeline: "So tired from all that learning!"
+            },
+            {
+                username: "Sally",
+                timeline: "Javascript is sooooo cool!"
+            },
+            {
+                username: "Mitch",
+                timeline: "Javascript is preeetyy cool!"
+            }
+        ];
+
+        function isUservalid(username, password){
+            for(var i=0;i < database.length ; i++){
+                if(database[i].username === username &&
+                  database[i].password ===password){
+                    return true;
+                }
+            }
+            return false;
+        }
+        function signIn(username,password){
+            if(isUservalid(username,password)){
+                console.log(newsfeed);
+            }
+            else{
+                alert("sorry, wrong username and password");
+            }
+        }
+
+        var usernamePrompt = prompt("enter username: ");
+        var passwordPrompt = prompt("enter password: ");
+
+        signIn(usernamePrompt, passwordPrompt);
+        
+    </script>
+  </body>
+</html>

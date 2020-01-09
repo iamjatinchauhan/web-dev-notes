@@ -1,0 +1,22 @@
+# MVC
+*   **Model** - stores data and related logic
+*   **View** - represent the presentation of data
+*   **Controller** -handles the user application
+
+Softwares to be Download:  
+xampp - bitnami  
+composer  
+
+After softwares getting installed  
+
+open cmd prompt  
+>   composer
+>   Laravel
+>   cd xampp  //move to the directory where xampp folder is present
+press enter
+>   cd htdocs
+>   composer global require Laravel/installer  //write this when you come to htdocs
+---
+>   Laravel new <project name>
+
+//folder will be created in htdocs
