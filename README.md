@@ -611,6 +611,40 @@ function funestFunction(){
 }
 ```
 
+
+```javascript
+var globVar = "Hi";    //Global Scope[Exists everywhere]
+
+function test () {
+	var localVar = "Bye";   //Function Scope[Exists inside function only]
+
+	console.log(globVar);   //Hi
+	console.log(localVar);  //Bye
+
+	function inside () {
+		console.log(localVar);    //Lexical Scope[child function able to access parent variables]
+	}
+
+	for(let i=0; i<3; i++) {    //Block Scope[Exists only in block of code]
+		console.log(globVar);   //Hi
+		console.log(localVar);  //Bye
+		console.log(i);  // 0, 1, 2
+	}
+	console.log(i);  //ERROR
+}
+
+console.log(globVar);  // Hi
+console.log(localVar); //ERROR
+console.log(i);  //ERROR
+
+/*
+__Local scope__
+Anything that is not global is considered local, but subjective.  
+*	var localVar is local variable of function test()
+*	let i=0 is local variable of the block itself, it is not a local variable of function test()
+*/
+```
+
 * ECMAScript6 and Javascript
 > JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript. JavaScript is considered as one of the most popular implementations of ECMAScript.
 
