@@ -650,7 +650,8 @@ Anything that is not global is considered local, but subjective.
 
 *	let + const
 ```javascript
-const player = 'booby';
+const player = 'booby';  //const variable cannot be reassigned
+	// if using a variable that doesn't change probably use const ; otherwise use let.
 let experience = 100;
 let wizardLevel = false;
 
@@ -663,7 +664,7 @@ console.log('outside', wizardLevel);         //outside true
 ```
 
 *	Destructuring
-```
+```javascript
 const obj = {
 	player: 'bobby';
 	experience : 100;
@@ -692,6 +693,7 @@ const obj = {
 const obj = {
 	a, b, c
 }
+/*sometime you want properties to match the value. if property and value are same you can do this*/
 ```
 
 *	Template strings
