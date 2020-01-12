@@ -712,9 +712,22 @@ const obj = {
 ```
 
 *	default arguments
+```javascript
+function greet(name='', age=30, pet ='cat'){
+	return `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have.
+}
+/*
+>	greet()
+<-	Hello  you seem to be 20. What a lovely cat you have.
+-------------------------------------------------------------
+>	greet(name='john', age=30, pet ='cat');
+<-	Hello john you seem to be 20. What a lovely cat you have.
+*/
+```
 
 *	Symbol
 ```
+//symbols are used because they create unique identity, so you could be sure that there is no conflict.
 >	let sym1 = Symbol();
 	let sym2 = Symbol('foo');
 	let sym3 = Symbol('foo');
@@ -739,6 +752,11 @@ const obj = {
 	}
 	//can be written as
 	const add2 = (a,b) => a + b;
+	/*
+	const add2 = (a,b) => {
+	return a + b;
+	}
+	*/
 -------------------------------------------	
 >	add(4,2);
 //	6
