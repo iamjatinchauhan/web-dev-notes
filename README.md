@@ -838,6 +838,48 @@ Q. What are the two elements of a pure function?
 1. Deterministic --> always produces the same results given the same inputs  
 2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.
 
+*	Advanced Array
+```javascript
+const array = [1,2,10,16];
+const double = [];
+const newArray =array.forEach((num) => {
+	double.push(num*2);
+})
+console.log(double);
+// (4)	[2, 4, 20, 32]
+```
+
+*	**map, filter, reduce**
+```javascript
+const array = [1,2,10,16];
+const double = [];
+const newArray =array.forEach((num) => {
+	double.push(num*2);
+})
+console.log('forEach', double);  	// forEach	(4) [2, 4, 20, 32] 
+
+/*
+const mapArray = array.map((num) => {
+	return num*2
+});
+*/
+
+const mapArray = array.map(num => num*2);
+console.log('map', mapArray);	 	// map		(4) [2, 4, 20, 32]
+
+const filterArray = array.filter(num => num > 5);		
+// filter the array where num(respective element in array) is greater than 5
+console.log('filter', filterArray);	 // filter	(2) [10, 16]
+
+const reduceArray = array.reduce((accumulator, num) => {
+	return accumulator + num
+	//**accumulator**  - something where we can store the information that hapens in the body of function.
+}, 0); //here 0 means, accumultor to start with a.k.a default value
+console.log('reduce', reduceArray);	//reduce 29
+
+
+```
+
 
 ##  __Command Line__
 
