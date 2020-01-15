@@ -857,13 +857,14 @@ const newArray =array.forEach((num) => {
 	double.push(num*2);
 })
 console.log('forEach', double);  	// forEach	(4) [2, 4, 20, 32] 
-
+//forEach - just to loop over something and does what function says
+//in comparison to map. here, we have to create new array to return. no need to declare array seperately in map.
 /*
 const mapArray = array.map((num) => {
 	return num*2
 });
 */
-
+//map - loop over each element and return new array.
 const mapArray = array.map(num => num*2);
 console.log('map', mapArray);	 	// map		(4) [2, 4, 20, 32]
 
