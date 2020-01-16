@@ -878,9 +878,62 @@ const reduceArray = array.reduce((accumulator, num) => {
 }, 0); //here 0 means, accumultor to start with a.k.a default value
 console.log('reduce', reduceArray);	//reduce 29
 
-
 ```
 
+*	reference type
+```javascript
+var object1 = {value: 10};
+var object2 = object1; //object 2 reference object 1
+var object3 = {value: 10};
+
+object1 === object2;   // true
+object1 === object3;   // false
+object1.value = 15;    // 15
+object2.value;         // 15
+object3.value;         // 10
+```
+
+*	context (vs scope)  -  where we are within object
+```javascript
+const object4 = {
+    a: function() {
+        console.log(this);
+    }
+}
+
+object4.a()   // {a:f}
+```
+
+*	instantiation  -  make a copy of object and reuse the code
+```javascript
+class Player {
+    constructor(name, type) {
+        console.log(this);
+        this.name = name;
+        this.type = type;
+    }
+    introduce() {
+        console.log(`Hi I am ${this.name} , I'm a ${this.type}`);
+    }
+}
+
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type)
+    }
+    play() {
+        console.log(`WEEEEEE I'm a ${this.type}`)
+    }
+}
+
+const wizard1 = new Wizard('shelly', 'Healer');
+const wizard2 = new Wizard('shawn', 'Dark Magic');
+
+/*OUTPUT:
+Object { name: "shelly", type: "Healer" }
+Object { name: "shawn", type: "Dark Magic" }
+*/
+```
 
 ##  __Command Line__
 
