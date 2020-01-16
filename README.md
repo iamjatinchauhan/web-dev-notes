@@ -917,21 +917,32 @@ class Player {
     }
 }
 
-class Wizard extends Player {
+class Wizard extends Player {		//class wizard that extends Player; whenever you extend a class you have to use super
     constructor(name, type) {
-        super(name, type)
+        super(name, type)		//takes to the constructor of Player
     }
     play() {
-        console.log(`WEEEEEE I'm a ${this.type}`)
+        console.log(`WEEEEEE I'm a ${this.type}`);
     }
 }
 
-const wizard1 = new Wizard('shelly', 'Healer');
+const wizard1 = new Wizard('shelly', 'Healer');		//makes instance of wizard
 const wizard2 = new Wizard('shawn', 'Dark Magic');
 
 /*OUTPUT:
 Object { name: "shelly", type: "Healer" }
 Object { name: "shawn", type: "Dark Magic" }
+
+>	wizard1.play()
+//	WEEEEEE I'm a Healer
+
+>	wizard1.introduce()
+//	Hi I am Shelly , I'm a Healer
+
+>	wizard2.introduce()
+//	Hi I am Shawn , I'm a Dark Magic 
+
+
 */
 ```
 
