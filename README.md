@@ -601,7 +601,7 @@ Reference websites:
 
 ## 	__Advanced Javascript__
 
-*	Scope
+**Scope**
 ```javascript
 //Root Scope(window)
 var fun = 5;
@@ -765,7 +765,7 @@ function greet(name='', age=30, pet ='cat'){
 //	6
 ```
 
-*	__Advanced function__
+__Advanced function__
 ```javascript
 /*
 function first() {
@@ -792,13 +792,13 @@ const newFunc = first();
 newFunc();
 ```
 
-*	Closures
+Closures  
 *child scope always has access to parent scope*  
-Closures - a function ran. the function executed. It's never going to be execute again.
-BUT it's going to remember that there are refernces to those variables.
+Closures - a function ran. the function executed. It's never going to be execute again.  
+BUT it's going to remember that there are refernces to those variables.  
 so the child scope always has access to the parent scope.
 
-*	Currying
+Currying  
 The process of converting a function that takes multiple arguments into a function that takes them one at a time.  
 ```
 >	const multiply = (a, b) => a * b;
@@ -822,8 +822,8 @@ The process of converting a function that takes multiple arguments into a functi
 
 ```
 
-*	Compose
-act of putting two function together to form a third function where the output of one function is input of another function.  
+Compose  
+>act of putting two function together to form a third function where the output of one function is input of another function.  
 ```
 const compose = (f,g) => (a) => f(g(a));
 // f(g(a))  ->  f(sum(a))  ->  f(6)  -> sum(6)  ->  7
@@ -838,7 +838,7 @@ Q. What are the two elements of a pure function?
 1. Deterministic --> always produces the same results given the same inputs  
 2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.
 
-*	Advanced Array
+Advanced Array  
 ```javascript
 const array = [1,2,10,16];
 const double = [];
@@ -849,7 +849,7 @@ console.log(double);
 // (4)	[2, 4, 20, 32]
 ```
 
-*	**map, filter, reduce**
+**map, filter, reduce**  
 ```javascript
 const array = [1,2,10,16];
 const double = [];
@@ -880,7 +880,7 @@ console.log('reduce', reduceArray);	//reduce 29
 
 ```
 
-*	reference type
+reference type  
 ```javascript
 var object1 = {value: 10};
 var object2 = object1; //object 2 reference object 1
@@ -893,7 +893,7 @@ object2.value;         // 15
 object3.value;         // 10
 ```
 
-*	context (vs scope)  -  where we are within object
+context (vs scope)  -  where we are within object
 ```javascript
 const object4 = {
     a: function() {
@@ -904,7 +904,7 @@ const object4 = {
 object4.a()   // {a:f}
 ```
 
-*	instantiation  -  make a copy of object and reuse the code
+**instantiation**  -  make a copy of object and reuse the code  
 ```javascript
 class Player {
     constructor(name, type) {
@@ -941,10 +941,128 @@ Object { name: "shawn", type: "Dark Magic" }
 
 >	wizard2.introduce()
 //	Hi I am Shawn , I'm a Dark Magic 
-
-
 */
 ```
+
+**Pass By value vs Pass By reference**  
+```javascript
+var a = 5;
+var b = a;
+
+b++;
+
+console.log(a);//5
+console.log(b);//6
+
+//save space in memory
+let obj1 = {name: 'Yao', password: '123'};
+let obj2 = obj1;
+
+obj2.password = 'easypeasy';
+
+console.log(obj1);//{name: 'Yao', password: '123'}
+console.log(obj2);//{name: 'Yao', password: '123'}
+
+var c =[1,2,3,4,5];
+var d =c;
+d.push(123);
+console.log(d);
+console.log(c);
+
+var c =[1,2,3,4,5];
+var d =[].concat(c);
+d.push(123);
+console.log(d);//[1,2,3,4,5,123]
+console.log(c);//[1,2,3,4,5]
+```
+
+```
+//shallow cloning
+let obj = {a:'a', b:'b', c:'c'};
+let clone = Object.assign({}, obj);
+let clone2 = {...obj}; //above clone can also be written as
+obj.c = 5;
+console.log(clone);   //{a:'a', b:'b', c:'c'}
+console.log(clone2);  //{a:'a', b:'b', c:'c'}
+console.log(obj);     //{a:'a', b:'b', c:5}
+
+//deep cloning -- can have performance implication if its extremely deep object
+let obj = {a:'a', b:'b', c:{ deep : 'try and copy me'}};
+let clone = Object.assign({}, obj);
+let clone2 = {...obj}; 
+let superclone = JSON.parse(JSON.strigify(obj))
+obj.c.deep = 'hahaha';
+console.log(obj);            //{a:'a', b:'b', c:{ deep : 'hahaha'}
+console.log(clone);          //{a:'a', b:'b', c:{ deep : 'hahaha'}
+console.log(clone2);         //{a:'a', b:'b', c:{ deep : 'hahaha'}
+console.log(auperclone);     //{a:'a', b:'b', c:{ deep : 'try and copy me'}}
+```
+
+**TYPE COERCION**  
+```javascript
+1 == '1' //true
+1 === '1' //false
+Object.is(-0,+0)//true
+NaN === NaN //false
+```
+
+**ES7** 
+```
+const pets = {'cat','dog','bat'};
+pets.include('dog');//true
+pets.include('bird');//false
+
+const square = (x) =>x**2;  //similarly, x**3 will do cube for this.
+square(5);//25
+```
+
+**ES8**
+*   `.padStart()`
+*   `.padEnd()`
+```
+Turtle.padStart(10);  // "     Turtle"
+Turtle.padStart(10);  // "Turtle     "
+```
+
+*   Object.values;
+*   Object.entries;
+*   Object.keys;
+
+```javascript
+let obj = {
+    username0: 'Santa',
+    username1: 'Rudolf',
+    username2: 'Mr. Grinch',
+}
+
+Object.keys(obj).forEach((key, index) => {
+    console.log(key, obj[key]);
+})
+/*username0 Santa
+username1 Rudolf
+username2 Mr. Grinch*/
+
+Object.values(obj).forEach(value => {
+    console.log(value);
+})
+/*Santa
+Rudolf
+Mr. Grinch*/
+
+Object.entries(obj).forEach(value => {
+    console.log(value);
+})
+/*(2) ["username0", "Santa"]
+(2) ["username1", "Rudolf"]
+(2) ["username2", "Mr. Grinch"]*/
+
+```
+
+**Links**   
+*   [Type Coercion Table](https://dorey.github.io/JavaScript-Equality-Table/)  
+*   [MDN - Equality comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)  
+*   [ECMA - Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3)
+
 
 ##  __Command Line__
 
