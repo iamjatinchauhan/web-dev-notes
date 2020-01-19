@@ -1058,10 +1058,77 @@ Object.entries(obj).forEach(value => {
 
 ```
 
+**ES10**
+*   `.flat()`
+```javascript
+const array = [1,2,,,,,,,3,4,[5,[6,7]],8];
+array.flat(3);      // Array(8) [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+```
+*   `.flatMap`
+*   `.trimStart()`
+```
+const userEmail3 = '     cannotfillemailformcorrectly@gmail.com   ';
+console.log(userEmail3.trimEnd().trimStart());  //cannotfillemailformcorrectly@gmail.com
+```
+*   `.trimEnd()`
+*   `.formEntries()`
+```
+const users = { user1: 18273, user2: 92833, user3: 90315 }
+//Solution
+const usersArray = Object.entries(users);
+console.log(usersArray); //array: [ [ 'user1', 18273 ], [ 'user2', 92833 ], [ 'user3', 90315 ] ]
+```
+*   try catch
+
+**Advanced Loops** 
+```
+const basket = ['apples', 'oranges', 'grapes'];
+//for of
+//iterating - arrays, strings
+for (item of basket) {   //strings: for (item of 'basket') {
+    console.log(item);   //apples, oranges, grapes
+}
+
+//for in - properties
+//enumerating - objects
+const detailedBasket = {
+    apples : 5,
+    oranges : 10,
+    grapes : 1000
+}
+for (item in detailedBasket) {
+    console.log(item);  
+    /*
+    apples
+    oranges
+    grapes
+    */
+}
+```
+
+*   Debugging `debugger`
+
+**How does Javascript works?**  
+*   Terms:
+    `Javascript is a single threaded laguage that can be non blocking??`
+    `Memory Leak`
+    `Call Stack - first in last out`
+    `synchronous Programming`
+    `Asynchronous Programming`
+    `Recursion - function calling itself`
+    `.setTimeout()`
+    
+Modules    
+*   Code Reusability
+*   Dependency Resolution
+
 **Links**   
 *   [Type Coercion Table](https://dorey.github.io/JavaScript-Equality-Table/)  
 *   [MDN - Equality comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)  
 *   [ECMA - Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3)
+*   [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+*   [Modern JavaScript Tutorial](https://javascript.info/)
+*   [JavaScript. The Core: 2nd Edition](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/)
 
 
 ##  __Command Line__
