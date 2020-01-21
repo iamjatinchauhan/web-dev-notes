@@ -905,6 +905,8 @@ object4.a()   // {a:f}
 ```
 
 **instantiation**  -  make a copy of object and reuse the code  
+> A constructor is a function which is used to create instances, and automatically set their prototype.
+
 ```javascript
 class Player {
     constructor(name, type) {
@@ -1181,16 +1183,8 @@ cls | clear the terminal screen
 
 
 
-## 15.	__Developer Environment__
 
-Popular code editors:
-* [Sublime Text 3](https://www.sublimetext.com/3)
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Atom](https://atom.io/)
-
-
-
-## 16.	__Git + Github + Open Source Projects__
+## 	__Git + Github + Open Source Projects__
 
 
 
@@ -1244,12 +1238,8 @@ Once you are in your forked project directory in your command prompt....
 	One simple way is to do the below command from the master of your forked repository:
 ```git pull upstream master```
 
-******************************************************************************************
-## 17.	__A Day In The Life Of A Developer__
-******************************************************************************************
 
-******************************************************************************************
-## 18.	__NPM + NPM Scripts__
+## 	__NPM + NPM Scripts__
 
 
 ```
