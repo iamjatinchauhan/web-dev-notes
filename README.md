@@ -1186,57 +1186,63 @@ cls | clear the terminal screen
 
 ## 	__Git + Github + Open Source Projects__
 
+[Install Git](https://www.atlassian.com/git/tutorials/install-git)  
 
 
-Install Git:
-*	https://www.atlassian.com/git/tutorials/install-git#windows
-*	https://www.atlassian.com/git/tutorials/install-git
+Command | Description
+-- | --
+`git config –global user.name "[name]" `   |   This command sets the author name respectively to be used with your commits.
+`git config –global user.email "[email address]"`	|   Sets the email address respectively to be used with your commits.
+`git clone "[url]"` | 	Create a local copy of a remote repository.
+`git status`  | 	This command lists all the files that have to be committed.
+`git add "[filename]"`  | 	Add a file to the staging area.
+`git add .`   |		This command adds one or more to the staging area.
+`git commit -m "[commit message]"`  | Commit changes.
+`git push `   |   Push changes to remote repository (remembered branch).
+`git pull`    |   Update local repository to the newest commit.
+`git branch`  |   To list out all the branches in the project.
+`git branch "[branch-name]"`  |   create a new branch at the current commit.
+`git checkout "[branch-name]"` |   Switch to a branch.
+`git checkout -b "[branch-name]"`  |   Create a new branch and switch to it.
+`git merge "[branch-name]" `   |   Merge a branch into the active branch.
+`git diff`    |	Shows the file differences which are not yet staged.
+`git push origin "[branch name]"`   |   Push a branch to your remote repository.
+`git init "[repository name]"`  |	To start a new repository.
+`git rm -r "[file-name.txt]" `	|   Remove a file (or folder)
 
 
-```
-git clone “https:……”
-git status
-git add “filename”
-git add .
-git commit –m”message”
-git push
-git pull
-git branch
-git branch “name”
-git checkout “name”
-git merge “name”
-```
-
+Do you have to always fork the Open Source project every time master get's updated? What happens if somebody makes an update to the original project and now your forked project is out of sync and outdated? Luckily for you, there is an easy way to always make sure your fork has the most up to date version of the original project. Here is how:
 
 Once you are in your forked project directory in your command prompt....
 
 
+1.	Type `git remote -v` and press Enter. You'll see the current configured remote repository for your fork.
+	```
+	git remote -v
+	origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+	origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+	```
 
-1.	Type git remote -v and press Enter. You'll see the current configured remote repository for your fork.
-
-	a.	```git remote -v```
-
-
-	b.	```origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)```
-
-
-	c.	```origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)```
-
-
-2.	Type git remote add upstream, and then paste the URL you would copy from the original repository if you were to do a git clone. Press Enter. It will look like this:
-
-
+2.	Type `git remote add upstream`, and then paste the URL you would copy from the original repository if you were to do a git clone. Press Enter. It will look like this:
 	```
 	git remote add upstream https://github.com/zero-to-mastery/PROJECT_NAME.git
 	```
 
-
-3.	To verify the new upstream repository you've specified for your fork, type ```git remote -v``` again. You should see the URL for your fork as origin, and the URL for the original repository as upstream.
-
+3.	To verify the new upstream repository you've specified for your fork, type `git remote -v` again. You should see the URL for your fork as `origin`, and the URL for the original repository as `upstream`.
+	```
+	git remote -v
+    origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+    origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+    upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+    upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+	```
 
 4.	Now, you can keep your fork synced with the upstream repository with a few Git commands.
 	One simple way is to do the below command from the master of your forked repository:
-```git pull upstream master```
+	```
+	git pull upstream master
+	```
+
 
 
 ## 	__NPM + NPM Scripts__
