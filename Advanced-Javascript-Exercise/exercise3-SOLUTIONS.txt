@@ -1,0 +1,110 @@
+// change everything below to the newer Javascript!
+
+Q.
+// let + const
+var a = 'test';
+var b = true;
+var c = 789;
+a = 'test2';
+
+// let + const
+let a = 'test';
+const b = true;
+const c = 789;
+a = 'test2';
+
+Q.
+// Destructuring
+var person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+// Destructuring
+const person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+
+Q.
+
+var firstName = person.firstName;
+var lastName = person.lastName;
+var age = person.age;
+var eyeColor = person.eyeColor;
+
+
+//const { firstName, lastName, age, eyeColor } = person;
+
+
+Q.
+// Object properties
+var a = 'test';
+var b = true;
+var c = 789;
+
+var okObj = {
+  a: a,
+  b: b,
+  c: c
+};
+
+
+// Object properties
+const a = 'test';
+const b = true;
+const c = 789;
+
+const okObj = {a, b, c};
+
+Q.
+// Template strings
+var message = "Hello " + firstName + " have I met you before? I think we met in " + city + " last summer no???";
+
+
+// Template strings
+const message = `Hello ${firstName} have I met you before? I think we met in ${city}. last summer no???`;
+
+Q.
+// default arguments
+// default age to 10;
+function isValidAge(age) {
+    return age
+}
+
+
+// default arguments
+// default age to 10;
+const isValidAge = (age = 10) => age;
+
+Q.
+// Symbol
+// Create a symbol: "This is my first Symbol"
+
+// Symbol
+// Create a symbol: "This is my first Symbol"
+const sym = Symbol('This is my first Symbol');
+
+Q.
+// Arrow functions
+function whereAmI(username, location) {
+    if (username && location) {
+        return "I am not lost";
+    } else {
+        return "I am totally lost!";
+    }
+}
+
+// Arrow functions
+const whereAmI = (username, location) => {
+    if (username && location) {
+        return "I am not lost";
+    } else {
+        return "I am totally lost!";
+    }
+}

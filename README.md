@@ -1247,24 +1247,31 @@ Once you are in your forked project directory in your command prompt....
 
 ## 	__NPM + NPM Scripts__
 
+To check if you have Node.js installed, run this command in your terminal:	`node -v`  
+To confirm that you have npm installed you can run this command in your terminal:	`npm -v`   
 
-```
-npm init
-npm install
-npm install –g browserify
-```
+**npm versions**
+npm is a separate project from Node.js, and tends to update more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to update your npm. Luckily, npm knows how to update itself! To update your npm, type this into your terminal:		`npm install npm@latest -g`  
+
+While using npm or node commands, if you ever get permission issue, you may need to run the commands with `sudo` in front of each command.  
+
+Command|what it does
+--|--
+`npm init`|create package.json file
+`npm install`|install npm package locally
+`npm install –g browserify`|install npm package globally
 
 Install node and npm:
-*	https://www.npmjs.com/get-npm
-*	https://nodejs.org/es/
+*	[NodeJs](https://nodejs.org/)
+*	[Get npm!](https://www.npmjs.com/get-npm)
 
 Reference websites:
-*	https://www.npmjs.com/
-*	https://www.npmjs.com/package/react
-*	https://lodash.com/
+*	[npm js](https://www.npmjs.com/)
+*	[npm react package](https://www.npmjs.com/package/react)
+*	[lodash](https://lodash.com/)
 
-******************************************************************************************
-## 19.	__React.js + Redux__
+
+## 	__React.js + Redux__
 
 ```
 npm install –g create-react-app
@@ -1309,7 +1316,6 @@ npm install redux-thunk
 *	https://redux-saga.js.org
 *	https://facebook.github.io/immutable-js/
 
-******************************************************************************************
 ## 20.	__HTTP/JSON/AJAX + Asynchronous Javascript__
 ******************************************************************************************
 
@@ -1325,7 +1331,6 @@ npm install redux-thunk
 *	https://apilist.fun
 
 
-******************************************************************************************
 ## 23.	__FINAL PROJECT: SmartBrain Front-End__
 
 
@@ -1354,7 +1359,6 @@ Image and video recognition:
 Icons library:
 *	https://icons8.com/icon
 
-******************************************************************************************
 ## 24.	__Node.js + Express.js__
 
 Install Postman:
@@ -1423,7 +1427,6 @@ $ npm install bcrypt
 ```
 
 
-******************************************************************************************
 ## 25.	__FINAL PROJECT: SmartBrain Back-End -- Server__
 
 
@@ -1475,7 +1478,6 @@ const cors = require('cors')
 app.use(cors());
 ```
 
-******************************************************************************************
 ## 26.	__Databases__
 
 
@@ -1634,7 +1636,6 @@ Enter to a database with a different user:
 	psql -h localhost -d nombre_base -U nombre_usuario
 
 
-******************************************************************************************
 ## 27.	__FINAL PROJECT: SmartBrain Back-End – Database__
 
 
@@ -1643,7 +1644,6 @@ Tool for db connection with back-end:
 *	https://knexjs.org/#Installation-node
 *	https://github.com/vitaly-t/pg-promise
 
-******************************************************************************************
 ## 28.	__Production + Deployment__
 
 
