@@ -20,14 +20,14 @@ Topics:
 	<br>
 	__PC>GOOGLE SERVER --> **Files(html+css+js+...) to PC**__
 	
-	![Traceroute cmd](./Cmd-traceroute.png)
+	![Traceroute cmd](./img/Cmd-traceroute.png)
 	__For Fast Transition between Browser and Google server__
 	- Location of Server
 	- How many Trips
 	- Size of Files(html+css+js ..)
 	
 	
-	![FSD-Diagram](./FSD-Diagram.png)
+	![FSD-Diagram](./img/FSD-Diagram.png)
 	<div align="center">
 	<p><b>Client Side VS Server Side</b></p>
 	</div>
@@ -220,7 +220,7 @@ Properties
 *	`transform`
 *	`box-shadow`
 
-![Flexbox-Cheatsheet](./Flexbox-CheatSheet.png)
+![Flexbox-Cheatsheet](./img/Flexbox-CheatSheet.png)
 
 Tools
 *	Chrome Toggle Device
@@ -262,7 +262,7 @@ Installing Github:
 
 ## 	CSS Grid + CSS Layout
 
-![Grid-Layout-Cheatsheet](./Grid-Layout-Cheatsheet.png)
+![Grid-Layout-Cheatsheet](./img/Grid-Layout-Cheatsheet.png)
 
 Cheat Sheet:
 *	[Grid Malven](http://grid.malven.co/)
@@ -714,7 +714,7 @@ const obj = {
 *	default arguments
 ```javascript
 function greet(name='', age=30, pet ='cat'){
-	return `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have.
+	return `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have.`
 }
 /*
 >	greet()
@@ -1269,9 +1269,12 @@ Reference websites:
 *	[npm js](https://www.npmjs.com/)
 *	[npm react package](https://www.npmjs.com/package/react)
 *	[lodash](https://lodash.com/)
+*	[npm semver calculator](https://semver.npmjs.com/)
 
 
 ## 	__React.js + Redux__
+
+![React-Components](./img/React-Components.png)
 
 ```
 npm install –g create-react-app
@@ -1279,11 +1282,19 @@ create-react-app “name”
 npm start
 npm install tachyons
 ```
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+>If you've previously installed create-react-app globally via npm install -g create-react-app, we recommend you uninstall the package using npm uninstall -g create-react-app to ensure that npx always uses the latest version.
 
-
-Website for fonts download:
-*	http://www.cufonfonts.com/en
-
+Links:
+*	[create-react-app](https://www.npmjs.com/package/create-react-app)
+*	[Overview of create-react-app](https://github.com/facebook/create-react-app)
+*	[create-react-app updated list](https://reactjs.org/blog/2018/10/01/create-react-app-v2.html)
+*	[create-react-app documentation](https://create-react-app.dev/docs/getting-started/)
+*	[What is npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
 
 Reference websites:
 *	https://reactjs.org/docs/react-component.html
@@ -1300,7 +1311,8 @@ npm install redux-logger
 npm install redux-thunk
 ```
 
-
+Website Links
+*	[CUFON Fonts](http://www.cufonfonts.com/en)
 *	https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
 *	https://reacttraining.com/react-router/
 *	https://ramdajs.com/
@@ -1316,14 +1328,12 @@ npm install redux-thunk
 *	https://redux-saga.js.org
 *	https://facebook.github.io/immutable-js/
 
-## 20.	__HTTP/JSON/AJAX + Asynchronous Javascript__
-******************************************************************************************
+## __HTTP/JSON/AJAX + Asynchronous Javascript__
 
-******************************************************************************************
-## 21.	__Backend Basics__
-******************************************************************************************
 
-******************************************************************************************
+## __Backend Basics__
+
+
 ## 22. __APIs__
 ******************************************************************************************
 *	https://stripe.com/docs/api
