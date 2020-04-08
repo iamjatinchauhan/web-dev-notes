@@ -327,6 +327,7 @@ Free Design & Illustration resources:
 ---
 > 10 - "7"
 > 3
+---
 > "hello" - "bye"
 > NaN     //means not a number
 ```
@@ -382,7 +383,9 @@ ___________
 `>=`
 `<=`
 `>`
-`<`
+`<`  
+
+>= is used for assigning values to a variable in JavaScript. == is used for comparison between two variables irrespective of the datatype of variable. === is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values
 
 **JAVASCRIPT VARIABLES**
 * `var`
@@ -404,12 +407,12 @@ ___________
 
 **JAVASCRIPT FUNCTIONS**
 ```javascript
-var a = function name() {};   //function expression
+var a = function name() {};   //function expression    //Anonymous function
 ---------------
 function name() {}            //function declaration
 return
 ---------------
-function name(parameter) {
+function name(parameter) {  //sometime, parameters and arguments can be used interchangeably
 console.log("name is :" + parameter);
 }
 
@@ -418,12 +421,24 @@ name("Rob");
 ---------------
 <!-- () => (new in ECMAScript 6) -->
 ```
+DRY - DO NOT REPEAT YOURSELF  
 > `console. log()` is a function in JavaScript which is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.
 
 **JAVASCRIPT DATA STRUCTURES**
 * Array
+```javascript
+list = ["apple","banana","orange"];
+```
 * Object
-
+```javascript
+var user = {
+	name : "John",
+	age : 24,
+	hobby : "soccer",
+}
+// user.favouritefood = "spinach";
+//user.hobby = "cricket";
+```
 **Array methods**
 
 |Method 	|Description|
@@ -867,15 +882,17 @@ const mapArray = array.map((num) => {
 //map - loop over each element and return new array.
 const mapArray = array.map(num => num*2);
 console.log('map', mapArray);	 	// map		(4) [2, 4, 20, 32]
+//.map() returns a modified copy of the array leaving original untouched.
 
 const filterArray = array.filter(num => num > 5);		
 // filter the array where num(respective element in array) is greater than 5
 console.log('filter', filterArray);	 // filter	(2) [10, 16]
+//.filter() returns a modified copy of the array – the original is still available!
 
 const reduceArray = array.reduce((accumulator, num) => {
 	return accumulator + num
 	//**accumulator**  - something where we can store the information that hapens in the body of function.
-}, 0); //here 0 means, accumultor to start with a.k.a default value
+}, 0); //Accumulator is required to be set to a starting value. Here it is 0.
 console.log('reduce', reduceArray);	//reduce 29
 
 ```
@@ -962,8 +979,8 @@ let obj2 = obj1;
 
 obj2.password = 'easypeasy';
 
-console.log(obj1);//{name: 'Yao', password: '123'}
-console.log(obj2);//{name: 'Yao', password: '123'}
+console.log(obj1);//{name: 'Yao', password: 'easypeasy'}
+console.log(obj2);//{name: 'Yao', password: 'easypeasy'}
 
 var c =[1,2,3,4,5];
 var d =c;
@@ -978,10 +995,10 @@ console.log(d);//[1,2,3,4,5,123]
 console.log(c);//[1,2,3,4,5]
 ```
 
-```
+```javascript
 //shallow cloning
 let obj = {a:'a', b:'b', c:'c'};
-let clone = Object.assign({}, obj);
+let clone = Object.assign({}, obj);  //{} means where to copy at  & obj means from where to copy
 let clone2 = {...obj}; //above clone can also be written as
 obj.c = 5;
 console.log(clone);   //{a:'a', b:'b', c:'c'}
@@ -997,33 +1014,39 @@ obj.c.deep = 'hahaha';
 console.log(obj);            //{a:'a', b:'b', c:{ deep : 'hahaha'}
 console.log(clone);          //{a:'a', b:'b', c:{ deep : 'hahaha'}
 console.log(clone2);         //{a:'a', b:'b', c:{ deep : 'hahaha'}
-console.log(auperclone);     //{a:'a', b:'b', c:{ deep : 'try and copy me'}}
+console.log(superclone);     //{a:'a', b:'b', c:{ deep : 'try and copy me'}}
 ```
 
 **TYPE COERCION**  
 ```javascript
+/*The difference between == and === is that: == converts the variable values to the same type before performing comparison. This is called type coercion. === does not do any type conversion (coercion) and returns true only if both values and types are identical for the two variables being compared.*/
 1 == '1' //true
 1 === '1' //false
 Object.is(-0,+0)//true
-NaN === NaN //false
+NaN === NaN //false    ?NaN means Not a Number
 ```
+
+##### Links   
+*   [Type Coercion Table](https://dorey.github.io/JavaScript-Equality-Table/)  
+*   [MDN - Equality comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)  
+*   [ECMA - Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3)
 
 **ES7** 
-```
+```javascript
 const pets = {'cat','dog','bat'};
-pets.include('dog');//true
-pets.include('bird');//false
+pets.include('dog');   //true
+pets.include('bird');  //false
 
 const square = (x) =>x**2;  //similarly, x**3 will do cube for this.
-square(5);//25
+square(5);  //25
 ```
 
 **ES8**
 *   `.padStart()`
 *   `.padEnd()`
-```
+```javascript
 Turtle.padStart(10);  // "     Turtle"
-Turtle.padStart(10);  // "Turtle     "
+Turtle.padEnd(10);  // "Turtle     "
 ```
 
 *   Object.values;
@@ -1065,14 +1088,15 @@ Object.entries(obj).forEach(value => {
 ```javascript
 const array = [1,2,,,,,,,3,4,[5,[6,7]],8];
 array.flat(3);      // Array(8) [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+//.flat(how many layers you want to flatten);
 ```
 *   `.flatMap`
 *   `.trimStart()`
+*   `.trimEnd()`
 ```
 const userEmail3 = '     cannotfillemailformcorrectly@gmail.com   ';
 console.log(userEmail3.trimEnd().trimStart());  //cannotfillemailformcorrectly@gmail.com
 ```
-*   `.trimEnd()`
 *   `.formEntries()`
 ```
 const users = { user1: 18273, user2: 92833, user3: 90315 }
@@ -1083,13 +1107,22 @@ console.log(usersArray); //array: [ [ 'user1', 18273 ], [ 'user2', 92833 ], [ 'u
 *   try catch
 
 **Advanced Loops** 
-```
-const basket = ['apples', 'oranges', 'grapes'];
+```javascript
 //for of
-//iterating - arrays, strings
-for (item of basket) {   //strings: for (item of 'basket') {
+const basket = ['apples', 'oranges', 'grapes'];
+// iterating - arrays,strings
+for (item of basket) {
     console.log(item);   //apples, oranges, grapes
 }
+
+for (item of 'apple'){
+	console.log(item);
+}
+// a
+// p
+// p
+// l
+// e
 
 //for in - properties
 //enumerating - objects
@@ -1106,9 +1139,20 @@ for (item in detailedBasket) {
     grapes
     */
 }
+
+
+/* suppose enumeration done on array(for in performed on array)*/
+// for (item in basket) {
+//     console.log(item);  
+//     /*
+//     0
+//     1
+//     2
+//     */
+// }
 ```
 
-*   Debugging `debugger`
+*   Debugging `debugger;`
 
 **How does Javascript works?**  
 *   Terms:
@@ -1125,9 +1169,6 @@ Modules
 *   Dependency Resolution
 
 **Links**   
-*   [Type Coercion Table](https://dorey.github.io/JavaScript-Equality-Table/)  
-*   [MDN - Equality comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)  
-*   [ECMA - Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3)
 *   [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 *   [Modern JavaScript Tutorial](https://javascript.info/)
 *   [JavaScript. The Core: 2nd Edition](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/)
@@ -1135,10 +1176,7 @@ Modules
 
 ##  __Command Line__
 
-
-
 ### FOR MAC OR LINUX:
-
 
 Command | Description
 --- | ---
@@ -1165,7 +1203,6 @@ say hello (only on Mac) | the mac will speak any text you enter after the 'say' 
 
 ### FOR WINDOWS:
 
-
 cmd | What it does
 -- | --
 dir | list files
@@ -1180,7 +1217,6 @@ rename {filename} {new filename} | rename a file or folder
 start {filename} | open file in default program
 start . | open current directory
 cls | clear the terminal screen
-
 
 
 
@@ -1244,14 +1280,14 @@ Once you are in your forked project directory in your command prompt....
 	```
 
 
-
 ## 	__NPM + NPM Scripts__
 
 To check if you have Node.js installed, run this command in your terminal:	`node -v`  
 To confirm that you have npm installed you can run this command in your terminal:	`npm -v`   
 
 **npm versions**
-npm is a separate project from Node.js, and tends to update more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to update your npm. Luckily, npm knows how to update itself! To update your npm, type this into your terminal:		`npm install npm@latest -g`  
+npm is a separate project from Node.js, and tends to update more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to update your npm. Luckily, npm knows how to update itself!   
+To update your npm, type this into your terminal:	`npm install npm@latest -g`  
 
 While using npm or node commands, if you ever get permission issue, you may need to run the commands with `sudo` in front of each command.  
 
