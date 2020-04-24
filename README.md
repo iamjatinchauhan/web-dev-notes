@@ -290,6 +290,16 @@ Free Design & Illustration resources:
 
 ## Javascript
 
+#### JavaScript Engine
+Each browser has its own JavaScript engine which is used to support the JavaScript scripts in order for them to work properly. Below are the names of the JavaScript engines used in some of the most popular browsers out there.  
+```
+Chrome        	: 		V8
+Firefox       	: 		SpiderMonkey
+Safari        	: 		JavaScript Core
+Microsoft Edge	: 		Chakra
+```
+
+
 **JAVASCRIPT TYPES**
 1. Number
 ```
@@ -1281,9 +1291,10 @@ Once you are in your forked project directory in your command prompt....
 
 
 ## 	__NPM + NPM Scripts__
+*npm is the world's largest Software Registry.Open-source developers use npm to share software.*  
 
-To check if you have Node.js installed, run this command in your terminal:	`node -v`  
-To confirm that you have npm installed you can run this command in your terminal:	`npm -v`   
+`node -v`	: To check if you have Node.js installed, run this command in your terminal.  
+`npm -v`	: To confirm that you have npm installed you can run this command in your terminal.  
 
 **npm versions**
 npm is a separate project from Node.js, and tends to update more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to update your npm. Luckily, npm knows how to update itself!   
@@ -1298,6 +1309,7 @@ Command|what it does
 `npm install –g browserify`|install npm package globally
 
 Install node and npm:
+*	[What is npm?](https://www.w3schools.com/whatis/whatis_npm.asp)
 *	[NodeJs](https://nodejs.org/)
 *	[Get npm!](https://www.npmjs.com/get-npm)
 
@@ -1318,6 +1330,14 @@ create-react-app “name”
 npm start
 npm install tachyons
 ```
+### npm install
+To trigger the installation of all modules that are listed as dependencies and devDependencies in the package.json in the current directory. To do so, you'll simply need to run the command itself:
+```
+npm install
+```
+Once you run this, npm will begin the installation process of all of the current project's dependencies. 
+
+### Create-react-app
 ```
 npx create-react-app my-app
 cd my-app
@@ -1325,53 +1345,330 @@ npm start
 ```
 >If you've previously installed create-react-app globally via npm install -g create-react-app, we recommend you uninstall the package using npm uninstall -g create-react-app to ensure that npx always uses the latest version.
 
+### What is package.json?
+`package.json` is a plain JSON(Java Script Object Notation) text file which contains all metadata information about Node JS Project or application.  
+Every Node JS Package or Module should have this file at root directory to describe its metadata in plain JSON Object format.  
+We should use same file name with same case “package” and same file extension “*.json”.  
+> Why that filename is “package”: because Node JS platform manages every feature as separate component. That component is also known as “Package” or “Module”.    
+
+### Who uses package.json file?
+**NPM (Node Package Manager)** uses this package.json file information about Node JS Application information or Node JS Package details.
+package.json file contains a number of different directives or elements. It uses these directives to tell NPM “How to handle the module or package”.
+
+```json
+//in package.JSON file
+"scripts": {
+    "start": "react-scripts start",	//reads the react scripts  - npm start
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"	//use eject when you want to customize the project and go your own way
+  },
+```
+
+### .gitignore
+A `gitignore` file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected;  
+Each line in a gitignore file specifies a pattern. When deciding whether to ignore a path, Git normally checks `gitignore` patterns from multiple sources.  
+
+### What Is JSX?
+JSX is an XML/HTML-like syntax used by React that extends ECMAScript so that XML/HTML-like text can co-exist with JavaScript/React code. The syntax is intended to be used by preprocessors *(i.e., transpilers like Babel)* to transform HTML-like text found in JavaScript files into standard JavaScript objects that a JavaScript engine will parse.  
+
+Basically, by using JSX you can write concise HTML/XML-like structures *(e.g., DOM like tree structures)* in the same file as you write JavaScript code, then Babel will transform these expressions into actual JavaScript code. Unlike the past, instead of putting JavaScript into HTML, JSX allows us to put HTML into JavaScript.  
+
+That's why we use `import React from 'react';` so that it could read html like syntax.
+
+### What is a service worker?
+A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction.  
+
+
+### When should I use curly braces for ES6 import?
+This is a **default import**:
+```javascript
+// B.js
+import A from './A'
+```
+It only works if `A` has the **default export**:
+```javascript
+// A.js
+export default 42
+```
+In this case it doesn’t matter what name you assign to it when importing:
+```javascript
+// B.js
+import A from './A'
+import MyA from './A'
+import Something from './A'
+```  
+Because it will always resolve to whatever is the **default export** of `A`.
+
+---   
+This is a **named import called** `A`:
+```javascript
+import { A } from './A'
+```
+It only works if `A` contains a **named export called** `A`:
+```javascript
+export const A = 42
+```
+In this case the name matters because you’re importing **a specific thing by its export name:**
+```javascript
+// B.js
+import { A } from './A'
+import { myA } from './A' // Doesn't work!
+import { Something } from './A' // Doesn't work!
+```
+---  
+To make these work, you would add a **corresponding named export** to `A`:
+```javascript
+// A.js
+export const A = 42
+export const myA = 43
+export const Something = 44
+```
+A module can only have **one default export**, but **as many named exports as you'd like** (zero, one, two, or many). You can import them all together:
+```javascript
+// B.js
+import A, { myA, Something } from './A'
+```
+Here, we import the default export as A, and named exports called `myA` and `Something`, respectively.
+```javascript
+// A.js
+export default 42
+export const myA = 43
+export const Something = 44
+```
+We can also assign them all different names when importing:
+```javascript
+// B.js
+import X, { myA as myX, Something as XSomething } from './A'
+```
+The default exports tend to be used for whatever you normally expect to get from the module. The named exports tend to be used for utilities that might be handy, but aren’t always necessary. However it is up to you to choose how to export things: for example, a module might have no default export at all.  
+[This is a great guide to ES modules, explaining the difference between default and named exports.](https://2ality.com/2014/09/es6-modules-final.html)
+
+**`npm run build`**	creates a `build` directory with a production build of your app.  
+**`npm audit`**	Scan your project for vulnerabilities and just show the details, without fixing anything  
+**`npm audit fix`**	Scan your project for vulnerabilities and automatically install any compatible updates to vulnerable dependencies  
+**`npm audit fix --force`**	Have audit fix install semver-major updates to toplevel dependencies, not just semver-compatible ones  
+
 Links:
 *	[create-react-app](https://www.npmjs.com/package/create-react-app)
 *	[Overview of create-react-app](https://github.com/facebook/create-react-app)
 *	[create-react-app updated list](https://reactjs.org/blog/2018/10/01/create-react-app-v2.html)
 *	[create-react-app documentation](https://create-react-app.dev/docs/getting-started/)
 *	[What is npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
+*	[Robohash](https://robohash.org)
+*	[Tachyons](https://tachyons.io/)
+*	[Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers/)
+*	[React.Fragment and Semantic HTML](http://blog.jmes.tech/react-fragment-and-semantic-html/)
+*	[Handling Events](https://reactjs.org/docs/handling-events.html)
+*	[JavaScript String toLowerCase() Method](https://www.w3schools.com/jsref/jsref_tolowercase.asp)
+*	[JavaScript String includes() Method](https://www.w3schools.com/jsref/jsref_includes.asp)
+*	[Sega Logo Font](https://www.cufonfonts.com/font/sega-logo-font)
+*	[Using @font-face](https://css-tricks.com/snippets/css/using-font-face/)
+*	[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+*	[React.Component](https://reactjs.org/docs/react-component.html)
+*	[Deployment-Create React App](https://create-react-app.dev/docs/deployment/)  
 
-Reference websites:
-*	https://reactjs.org/docs/react-component.html
-*	https://jsonplaceholder.typicode.com/
-*	http://atomicdesign.bradfrost.com/
-*	https://robohash.org
+**Action --> Reducer --> Store --> Make changes**
 
-Action --> Reducer --> Store --> Make changes
 
-```
-npm install redux
-npm install react-redux
-npm install redux-logger
-npm install redux-thunk
-```
-
-Website Links
-*	[CUFON Fonts](http://www.cufonfonts.com/en)
-*	https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
-*	https://reacttraining.com/react-router/
-*	https://ramdajs.com/
-*	https://lodash.com
-*	https://glamorous.rocks
-*	https://www.styled-components.com
-*	https://github.com/css-modules/css-modules
-*	https://www.gatsbyjs.org
-*	https://zeit.co/blog/next5
-*	www.material-ui.com/#/components/app-bar
-*	https://react.semantic-ui.com/elements/button
-*	https://github.com/reactjs/reselect
-*	https://redux-saga.js.org
-*	https://facebook.github.io/immutable-js/
 
 ## __HTTP/JSON/AJAX + Asynchronous Javascript__
 
+### HTTP
+The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.  
+HTTP works as a request-response protocol between a client and server.  
+A web browser may be the client, and an application on a computer that hosts a web site may be the server.  
+Example: A client (browser) submits an HTTP request to the server; then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.  
+
+HTTP Methods|What it does?
+-|-
+GET|GET is used to request data from a specified resource.
+POST|POST is used to send data to a server to create/update a resource.
+PUT|PUT is used to send data to a server to create/update a resource.
+DELETE|The DELETE method deletes the specified resource.
+
+**HTTP status messages that might be returned**
+
+<table>
+<tr>
+<td>1xx: Information</td>
+<td>2xx: Successful</td>
+<td>3xx: Redirection</td>
+<td>4xx: Client Error</td>
+<td>5xx: Server Error</td>
+</tr>
+</table>
+
+When a browser requests a service from a web server, an error might occur, and the server might return an error code like 404 Not Found. It is common to name these errors HTML error messages.  
+But these messages are something called HTTP status messages. In fact, the server always returns a message for every request. The most common message is 200 OK.  
+
+### JSON JavaScript Object Notation
+JSON is a syntax for storing and exchanging data. JSON is text, written with JavaScript object notation.
+
+**`JSON.stringify()`**  
+A common use of JSON is to exchange data to/from a web server.  
+When sending data to a web server, the data has to be a string.  
+Convert a JavaScript object into a string with `JSON.stringify()`.  
+
+**`JSON.parse()`**  
+A common use of JSON is to exchange data to/from a web server.  
+When receiving data from a web server, the data is always a string.  
+Parse the data with `JSON.parse()`, and the data becomes a JavaScript object.
+
+### AJAX [Asynchronous JavaScript And XML] 
+AJAX is not a programming language.  
+AJAX just uses a combination of:  
++	A browser built-in XMLHttpRequest object (to request data from a web server)  
++	JavaScript and HTML DOM (to display or use the data)
+
+>AJAX is a misleading name. AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text.  
+
+```javascript
+//Fetch
+fetch('/my/url').then(response => {
+	console.log(response);
+});
+```
+**AJAX** allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+#### PROMISE 
+A **`Promise`** is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending.
+
+*Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.*
+
+Prior to promises events and callback functions were used but they had limited functionalities and created unmanageable code. Multiple callback functions would create callback hell that leads to unmanageable code.  
+
+A `Promise` is in one of these states:
+
++	**fulfilled**: *meaning that the operation completed successfully.*  
+	`onFulfilled()` will be called (e.g., `resolve()` was called)
++	**rejected**: *meaning that the operation failed.*  
+	`onRejected()` will be called (e.g., `reject()` was called)
++	**pending**: *initial state, neither fulfilled nor rejected.*
+
+```javascript
+const promise = new Promise((resolve, reject) => {
+  //asynchronous code goes here
+});
+```
+
+**Promise Consumers:** Promises can be consumed by registering functions using .then and .catch methods.  
+`then()` is invoked when a promise is either resolved or rejected.  
+`catch()` is invoked when a promise is either rejected or some error has occured in execution.  
+
+**NOTE:**  
+*In computer science, **syntactic sugar** is syntax within a programming language that is designed to make things easier to read or to express. It makes the language "sweeter" for human use: things can be expressed more clearly, more concisely, or in an alternative style that some may prefer.*
+
+--- 
+
+#### ASYNC/AWAIT
+The purpose of `async`/`await` is to simplify using promises synchronously, and to perform some behavior on a group of `Promises`. As `Promises` are similar to structured callbacks, `async`/`await` is similar to combining generators and promises.
+
+---
+#### TRY/CATCH/FINALLY
+The **try/catch/finally** statement handles some or all of the errors that may occur in a block of code, while still running code.  
+Errors can be coding errors made by the programmer, errors due to wrong input, and other unforeseeable things.   
+
+The **try** statement allows you to define a block of code to be tested for errors while it is being executed.  
+The **catch** statement allows you to define a block of code to be executed, if an error occurs in the try block.
+The **finally** statement lets you execute code, after try and catch, regardless of the result. 
+
+**Note:** The `catch and finally statements are both optional`, but you need to use one of them (if not both) while using the try statement.
+
+**Tip:** When an error occurs, JavaScript will normally stop, and generate an error message. Use the `throw` statement to create a custom error (throw an exception). If you use **throw** together with **try** and **catch**, you can control program flow and generate custom error messages.
+
+```javascript
+try {
+  tryCode - Block of code to try
+}
+catch(err) {
+  catchCode - Block of code to handle errors
+}
+finally {
+  finallyCode - Block of code to be executed regardless of the try / catch result
+}
+
+// err 	
+// Required if used with catch. Specifies a local variable that refers to the error. 
+// The variable can refer to the Error object (contains information about the occurred error, like the message "'addlert' is not defined"). 
+// If the exception was created by the throw statement, the variable refers to the object specified in the throw statement
+```
+
+```javascript
+//Example: examines input. If the value is wrong, an exception (err) is thrown.
+// The exception (err) is caught by the catch statement and a custom error message is displayed:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Please input a number between 5 and 10:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="message"></p>
+
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("message");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "is Empty";
+    if(isNaN(x)) throw "not a number";
+    if(x > 10)   throw "too high";
+    if(x < 5)  throw "too low";
+  }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+}
+</script>
+
+</body>
+</html>
+```
+
+#### ES9 `Object spread operator`
+```
+const animals = {
+	tiger: 23,
+	lion: 5,
+	monkey:2
+}
+
+const {tiger, ...rest} = animals;
+----------------------------------
+>> tiger
+<< 23
+----------------------------------
+>> rest
+<< Object { lion: 5, monkey: 2 }
+
+----------------------------------
+----------------------------------
+
+const array = [1,2,3,4,5];
+function sum (a, b, c, d, e) {
+	return a+b+c+d+e;
+}
+----------------------------------
+>>	sum(...array);
+<<	15
+----------------------------------
+>>	sum(1,2,3,4,5)   // same as above for ES6
+<<	15
+```
+**[ECMAScript-new-features-list](https://github.com/daumann/ECMAScript-new-features-list)**
 
 ## __Backend Basics__
 
+Backend development languages handle the 'behind-the-scenes' functionality of web applications. It's code that connects the web to a database, manages user connections, and powers the web application itself. Backend development works in tandem with the front end to deliver the final product to the end user.
 
-## 22. __APIs__
-******************************************************************************************
+
+
+## __APIs__
+
 *	https://stripe.com/docs/api
 *	https://www.twilio.com/docs/api/messaging/send-messages
 *	https://apilist.fun
