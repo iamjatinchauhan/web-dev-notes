@@ -1,5 +1,5 @@
-# CWDC-ZTM
-All resources and notes from the Complete Web Developer in 2020: Zero to Mastery course
+# Complete Web Developer Notes
+All resources and notes from the CWDC-ZTM
 
 ## 	How The Internet Works
 
@@ -20,7 +20,7 @@ Topics:
 	<br>
 	__PC>GOOGLE SERVER --> **Files(html+css+js+...) to PC**__
 	
-	![Traceroute cmd](./img/Cmd-traceroute.png)
+	![Traceroute cmd](./img/Cmd-traceroute.png)  
 	__For Fast Transition between Browser and Google server__
 	- Location of Server
 	- How many Trips
@@ -50,7 +50,7 @@ Topics:
 
 
 Install a text editor (Select one):
-*	[sublimetext](https://www.sublimetext.com/)
+*	[Sublimetext](https://www.sublimetext.com/)
 *	[Atom](https://atom.io/)
 *	[VS Code](https://code.visualstudio.com/)
 
@@ -451,38 +451,38 @@ var user = {
 ```
 **Array methods**
 
-|Method 	|Description|
-|-|-|
-|concat()| 	Joins two or more arrays, and returns a copy of the joined arrays|
-|copyWithin()| 	Copies array elements within the array, to and from specified positions|
-|entries()| 	Returns a key/value pair Array Iteration Object|
-|every()| 	Checks if every element in an array pass a test|
-|fill()| 	Fill the elements in an array with a static value|
-|filter()| 	Creates a new array with every element in an array that pass a test|
-|find()| 	Returns the value of the first element in an array that pass a test|
-|findIndex()| 	Returns the index of the first element in an array that pass a test|
-|forEach()| 	Calls a function for each array element|
-|from()| 	Creates an array from an object|
-|includes()| 	Check if an array contains the specified element|
-|indexOf()| 	Search the array for an element and returns its position|
-|isArray()| 	Checks whether an object is an array|
-|join()| 	Joins all elements of an array into a string|
-|keys()| 	Returns a Array Iteration Object, containing the keys of the original array|
-|lastIndexOf()| 	Search the array for an element, starting at the end, and returns its position|
-|map()| 	Creates a new array with the result of calling a function for each array element|
-|pop()| 	Removes the last element of an array, and returns that element|
-|push()| 	Adds new elements to the end of an array, and returns the new length|
-|reduce()| 	Reduce the values of an array to a single value (going left-to-right)|
-|reduceRight()| 	Reduce the values of an array to a single value (going right-to-left)|
-|reverse()| 	Reverses the order of the elements in an array|
-|shift()| 	Removes the first element of an array, and returns that element|
-|slice()| 	Selects a part of an array, and returns the new array|
-|some()| 	Checks if any of the elements in an array pass a test|
-|sort()| 	Sorts the elements of an array|
-|splice()| 	Adds/Removes elements from an array|
-|toString()| 	Converts an array to a string, and returns the result|
-|unshift()| 	Adds new elements to the beginning of an array, and returns the new length|
-|valueOf()| 	Returns the primitive value of an array|
+Method			|Description
+-|-
+`concat()`		|Joins two or more arrays, and returns a copy of the joined arrays
+`copyWithin()`	|Copies array elements within the array, to and from specified positions
+`entries()`		|Returns a key/value pair Array Iteration Object
+`every()`		|Checks if every element in an array pass a test
+`fill()`		|Fill the elements in an array with a static value
+`filter()`		|Creates a new array with every element in an array that pass a test
+`find()`		|Returns the value of the first element in an array that pass a test
+`findIndex()`	|Returns the index of the first element in an array that pass a test
+`forEach()`		|Calls a function for each array element
+`from()`		|Creates an array from an object
+`includes()`	|Check if an array contains the specified element
+`indexOf()`		|Search the array for an element and returns its position
+`isArray()`		|Checks whether an object is an array
+`join()`		|Joins all elements of an array into a string
+`keys()`		|Returns a Array Iteration Object, containing the keys of the original array
+`lastIndexOf()`	|Search the array for an element, starting at the end, and returns its position
+`map()`			|Creates a new array with the result of calling a function for each array element
+`pop()`			|Removes the last element of an array, and returns that element
+`push()`		|Adds new elements to the end of an array, and returns the new length
+`reduce()`		|Reduce the values of an array to a single value (going left-to-right)
+`reduceRight()`	|Reduce the values of an array to a single value (going right-to-left)
+`reverse()`		|Reverses the order of the elements in an array
+`shift()`		|Removes the first element of an array, and returns that element
+`slice()`		|Selects a part of an array, and returns the new array
+`some()`		|Checks if any of the elements in an array pass a test
+`sort()`		|Sorts the elements of an array
+`splice()`		|Adds/Removes elements from an array
+`toString()`	|Converts an array to a string, and returns the result
+`unshift()`		|Adds new elements to the beginning of an array, and returns the new length
+`valueOf()`		|Returns the primitive value of an array
 
 
 **JAVASCRIPT LOOPING**
@@ -721,7 +721,7 @@ const obj = {
 /*sometime you want properties to match the value. if property and value are same you can do this*/
 ```
 
-*	Template strings
+*	Template Strings
 ```
 >	const name = "Sally";
 	const age = 34;
@@ -770,7 +770,7 @@ function greet(name='', age=30, pet ='cat'){
 //	false
 ```
 
-*	arrow function
+**Arrow Function**  
 ```
 >	function add(a, b) {
 		return a+b;
@@ -817,13 +817,13 @@ const newFunc = first();
 newFunc();
 ```
 
-Closures  
+**Closures**  
 *child scope always has access to parent scope*  
 Closures - a function ran. the function executed. It's never going to be execute again.  
 BUT it's going to remember that there are refernces to those variables.  
 so the child scope always has access to the parent scope.
 
-Currying  
+**Currying**  
 The process of converting a function that takes multiple arguments into a function that takes them one at a time.  
 ```
 >	const multiply = (a, b) => a * b;
@@ -847,7 +847,7 @@ The process of converting a function that takes multiple arguments into a functi
 
 ```
 
-Compose  
+**Compose**
 >act of putting two function together to form a third function where the output of one function is input of another function.  
 ```
 const compose = (f,g) => (a) => f(g(a));
@@ -857,13 +857,13 @@ const sum = (num) => num + 1;
 compose(sum, sum)(5);    //7
 ```
 
-*	Avoiding side Effects, functional purity.   (GOOD PRACTICE)
+*Avoiding side Effects, functional purity.*   **(GOOD PRACTICE)**  
 
-Q. What are the two elements of a pure function?  
+**Q. What are the two elements of a pure function?** 
 1. Deterministic --> always produces the same results given the same inputs  
 2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.
 
-Advanced Array  
+**Advanced Array**  
 ```javascript
 const array = [1,2,10,16];
 const double = [];
@@ -907,7 +907,7 @@ console.log('reduce', reduceArray);	//reduce 29
 
 ```
 
-reference type  
+**reference type**  
 ```javascript
 var object1 = {value: 10};
 var object2 = object1; //object 2 reference object 1
@@ -936,26 +936,26 @@ object4.a()   // {a:f}
 
 ```javascript
 class Player {
-    constructor(name, type) {
-        console.log(this);
-        this.name = name;
-        this.type = type;
-    }
-    introduce() {
-        console.log(`Hi I am ${this.name} , I'm a ${this.type}`);
-    }
+	constructor(name, type) {
+		console.log(this);
+		this.name = name;
+		this.type = type;
+	}
+	introduce() {
+		console.log(`Hi I am ${this.name} , I'm a ${this.type}`);
+	}
 }
 
-class Wizard extends Player {		//class wizard that extends Player; whenever you extend a class you have to use super
-    constructor(name, type) {
-        super(name, type)		//takes to the constructor of Player
-    }
-    play() {
-        console.log(`WEEEEEE I'm a ${this.type}`);
-    }
+class Wizard extends Player { //class wizard that extends Player; whenever you extend a class you have to use super
+	constructor(name, type) {
+		super(name, type) //takes to the constructor of Player
+	}
+	play() {
+		console.log(`WEEEEEE I'm a ${this.type}`);
+	}
 }
 
-const wizard1 = new Wizard('shelly', 'Healer');		//makes instance of wizard
+const wizard1 = new Wizard('shelly', 'Healer'); //makes instance of wizard
 const wizard2 = new Wizard('shawn', 'Dark Magic');
 
 /*OUTPUT:
@@ -1065,27 +1065,27 @@ Turtle.padEnd(10);  // "Turtle     "
 
 ```javascript
 let obj = {
-    username0: 'Santa',
-    username1: 'Rudolf',
-    username2: 'Mr. Grinch',
+	username0: 'Santa',
+	username1: 'Rudolf',
+	username2: 'Mr. Grinch',
 }
 
 Object.keys(obj).forEach((key, index) => {
-    console.log(key, obj[key]);
+	console.log(key, obj[key]);
 })
 /*username0 Santa
 username1 Rudolf
 username2 Mr. Grinch*/
 
 Object.values(obj).forEach(value => {
-    console.log(value);
+	console.log(value);
 })
 /*Santa
 Rudolf
 Mr. Grinch*/
 
 Object.entries(obj).forEach(value => {
-    console.log(value);
+	console.log(value);
 })
 /*(2) ["username0", "Santa"]
 (2) ["username1", "Rudolf"]
@@ -1100,13 +1100,15 @@ const array = [1,2,,,,,,,3,4,[5,[6,7]],8];
 array.flat(3);      // Array(8) [ 1, 2, 3, 4, 5, 6, 7, 8 ]
 //.flat(how many layers you want to flatten);
 ```
+
 *   `.flatMap`
 *   `.trimStart()`
 *   `.trimEnd()`
-```
+```javascript
 const userEmail3 = '     cannotfillemailformcorrectly@gmail.com   ';
 console.log(userEmail3.trimEnd().trimStart());  //cannotfillemailformcorrectly@gmail.com
 ```
+
 *   `.formEntries()`
 ```
 const users = { user1: 18273, user2: 92833, user3: 90315 }
@@ -1114,6 +1116,7 @@ const users = { user1: 18273, user2: 92833, user3: 90315 }
 const usersArray = Object.entries(users);
 console.log(usersArray); //array: [ [ 'user1', 18273 ], [ 'user2', 92833 ], [ 'user3', 90315 ] ]
 ```
+
 *   try catch
 
 **Advanced Loops** 
@@ -1165,14 +1168,14 @@ for (item in detailedBasket) {
 *   Debugging `debugger;`
 
 **How does Javascript works?**  
-*   Terms:
-    `Javascript is a single threaded laguage that can be non blocking??`
-    `Memory Leak`
-    `Call Stack - first in last out`
-    `synchronous Programming`
-    `Asynchronous Programming`
-    `Recursion - function calling itself`
-    `.setTimeout()`
+*   Terms:  
+    `Javascript is a single threaded laguage that can be non blocking??`  
+    `Memory Leak`  
+    `Call Stack - first in last out`  
+    `synchronous Programming`  
+    `Asynchronous Programming`  
+    `Recursion - function calling itself`  
+    `.setTimeout()`  
     
 Modules    
 *   Code Reusability
@@ -1188,45 +1191,46 @@ Modules
 
 ### FOR MAC OR LINUX:
 
-Command | Description
---- | ---
-ls  | lists files and folders within working directory
-pwd | show current working directory
-cd  | change working directory to user directory
-cd .. | change working directory to direct parent directory
-clear | clear current terminal screen
-cd / | change current directory to root directory
-cd ~ | change current directory to user directory
-cd path/to/folder | changes working directory to specified path
-mkdir name | create folder called 'name' within current directory
-open foldername | opens folder called 'foldername' using OS GUI
-touch index.html | creates new file titled index.html within working directory
-open  index.html | opens file named index.html using default system program
-open -a “Sublime Text” | opens sublime text program. This syntax can be used to open other programs
-open . | opens and displays current folder within OS GUI
-mv index.html about.html | renames index.html file to about.html
-up and down arrow | cycles through previous commands typed within current terminal session
-rm filename | deletes a file called 'filename' within the current directory
-rm -r foldername | used to delete folders. In this case 'foldername' will be deleted
-say hello (only on Mac) | the mac will speak any text you enter after the 'say' keyword
+Command 					| 	Description
+--- 						| 	---
+ls  						| 	lists files and folders within working directory
+pwd 						| 	show current working directory
+cd  						| 	change working directory to user directory
+cd .. 						| 	change working directory to direct parent directory
+clear 						| 	clear current terminal screen
+cd / 						| 	change current directory to root directory
+cd ~ 						| 	change current directory to user directory
+cd path/to/folder 			| 	changes working directory to specified path
+mkdir name 					| 	create folder called 'name' within current directory
+open foldername 			| 	opens folder called 'foldername' using OS GUI
+touch index.html 			| 	creates new file titled index.html within working directory
+open  index.html 			| 	opens file named index.html using default system program
+open -a “Sublime Text”		| 	opens sublime text program. This syntax can be used to open other programs
+open . 						| 	opens and displays current folder within OS GUI
+mv index.html about.html	| 	renames index.html file to about.html
+up and down arrow 			| 	cycles through previous commands typed within current terminal session
+rm filename 				| 	deletes a file called 'filename' within the current directory
+rm -r foldername 			| 	used to delete folders. In this case 'foldername' will be deleted
+say hello (only on Mac) 	| 	the mac will speak any text you enter after the 'say' keyword
 
 
 ### FOR WINDOWS:
 
-cmd | What it does
--- | --
-dir | list files
-cd {directory name} | change directory
-cd / | go to root (top) directory
-cd .. | go up a level
-mkdir {file name} | make a directory
-echo > {filename} | create an empty file
-del {filename} | remove a file
-rmdir {directory name} | remove a directory and all files within
-rename {filename} {new filename} | rename a file or folder
-start {filename} | open file in default program
-start . | open current directory
-cls | clear the terminal screen
+cmd | 	What it does
+-- 	| 	--
+dir	| 	list files
+cd {directory name}	| 	change directory
+cd /	| 	go to root (top) directory
+cd ..	| 	go up a level
+mkdir {file name}	| 	make a directory
+echo > {filename}	| 	create an empty file
+del {filename}		| 	remove a file
+rmdir {directory name}				| remove a directory and all files within
+rename {filename} {new filename}	| 	rename a file or folder
+start {filename}	| 	open file in default program
+start .	| 	open current directory
+cls		| 	clear the terminal screen
+tree	| 	display directories and subdirectories as a nesting tree
 
 
 
@@ -1237,24 +1241,24 @@ cls | clear the terminal screen
 
 Command | Description
 -- | --
-`git config –global user.name "[name]" `   |   This command sets the author name respectively to be used with your commits.
-`git config –global user.email "[email address]"`	|   Sets the email address respectively to be used with your commits.
-`git clone "[url]"` | 	Create a local copy of a remote repository.
-`git status`  | 	This command lists all the files that have to be committed.
+`git config –global user.name "[name]"`   	| 	This command sets the author name respectively to be used with your commits.
+`git config –global user.email "[email address]"`	| 	Sets the email address respectively to be used with your commits.
+`git clone "[url]"` 	| 	Create a local copy of a remote repository.
+`git status`  			| 	This command lists all the files that have to be committed.
 `git add "[filename]"`  | 	Add a file to the staging area.
-`git add .`   |		This command adds one or more to the staging area.
-`git commit -m "[commit message]"`  | Commit changes.
-`git push `   |   Push changes to remote repository (remembered branch).
-`git pull`    |   Update local repository to the newest commit.
-`git branch`  |   To list out all the branches in the project.
-`git branch "[branch-name]"`  |   create a new branch at the current commit.
-`git checkout "[branch-name]"` |   Switch to a branch.
-`git checkout -b "[branch-name]"`  |   Create a new branch and switch to it.
-`git merge "[branch-name]" `   |   Merge a branch into the active branch.
-`git diff`    |	Shows the file differences which are not yet staged.
-`git push origin "[branch name]"`   |   Push a branch to your remote repository.
-`git init "[repository name]"`  |	To start a new repository.
-`git rm -r "[file-name.txt]" `	|   Remove a file (or folder)
+`git add .`   						| 	This command adds one or more to the staging area.
+`git commit -m "[commit message]"`  | 	Commit changes.
+`git push `   | 	Push changes to remote repository (remembered branch).
+`git pull`    | 	Update local repository to the newest commit.
+`git branch`  | 	To list out all the branches in the project.
+`git branch "[branch-name]"`  		| 	create a new branch at the current commit.
+`git checkout "[branch-name]"` 		| 	Switch to a branch.
+`git checkout -b "[branch-name]"`	| 	Create a new branch and switch to it.
+`git merge "[branch-name]" `   		| 	Merge a branch into the active branch.
+`git diff`    | 	Shows the file differences which are not yet staged.
+`git push origin "[branch name]"`   | 	Push a branch to your remote repository.
+`git init "[repository name]"`  	| 	To start a new repository.
+`git rm -r "[file-name.txt]" `		| 	Remove a file (or folder)
 
 
 Do you have to always fork the Open Source project every time master get's updated? What happens if somebody makes an update to the original project and now your forked project is out of sync and outdated? Luckily for you, there is an easy way to always make sure your fork has the most up to date version of the original project. Here is how:
@@ -1302,11 +1306,11 @@ To update your npm, type this into your terminal:	`npm install npm@latest -g`
 
 While using npm or node commands, if you ever get permission issue, you may need to run the commands with `sudo` in front of each command.  
 
-Command|what it does
---|--
-`npm init`|create package.json file
-`npm install`|install npm package locally
-`npm install –g browserify`|install npm package globally
+Command						|	what it does
+--							|	--
+`npm init`					|	create package.json file
+`npm install`				|	install npm package locally
+`npm install –g browserify`	|	install npm package globally
 
 Install node and npm:
 *	[What is npm?](https://www.w3schools.com/whatis/whatis_npm.asp)
@@ -1320,7 +1324,8 @@ Reference websites:
 *	[npm semver calculator](https://semver.npmjs.com/)
 
 
-## 	__React.js + Redux__
+
+## 	__React.js__
 
 ![React-Components](./img/React-Components.png)
 
@@ -1502,6 +1507,9 @@ DELETE|The DELETE method deletes the specified resource.
 When a browser requests a service from a web server, an error might occur, and the server might return an error code like 404 Not Found. It is common to name these errors HTML error messages.  
 But these messages are something called HTTP status messages. In fact, the server always returns a message for every request. The most common message is 200 OK.  
 
+
+**Routing** refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on). Each **route** can have one or more handler functions, which are executed when the **route** is matched.
+
 ### JSON JavaScript Object Notation
 JSON is a syntax for storing and exchanging data. JSON is text, written with JavaScript object notation.
 
@@ -1669,13 +1677,26 @@ Backend development languages handle the 'behind-the-scenes' functionality of we
 
 ## __APIs__
 
-*	https://stripe.com/docs/api
-*	https://www.twilio.com/docs/api/messaging/send-messages
-*	https://apilist.fun
+An **API** application program interface is a set of routines, protocols, and tools for building software applications. Basically, an API specifies how software components should interact. Additionally, APIs are used when programming graphical user interface (GUI) components. A good API makes it easier to develop a program by providing all the building blocks. A programmer then puts the blocks together.
+
+*Here is a real-life **API example**. You may be familiar with the process of searching flights online. Just like the restaurant, you have a variety of options to choose from, including different cities, departure and return dates, and more. Let us imagine that you’re booking you are flight on an airline website. You choose a departure city and date, a return city and date, cabin class, as well as other variables. In order to book your flight, you interact with the airline’s website to access their database and see if any seats are available on those dates and what the costs might be.*
+
+*However, what if you are not using the airline’s website––a channel that has direct access to the information? What if you are using an online travel service, such as Kayak or Expedia, which aggregates information from a number of airline databases?*
+
+*The travel service, in this case, interacts with the airline’s API. The API is the interface that, like your helpful waiter, can be asked by that online travel service to get information from the airline’s database to book seats, baggage options, etc. The API then takes the airline’s response to your request and delivers it right back to the online travel service, which then shows you the most updated, relevant information.*
+
+Links:
+*	[API List...](https://apilist.fun/)
+*	[PUBLIC API's](https://public-apis.xyz/)
+*	[SWAPI - The Star Wars API](http://swapi.py4e.com/)
+*	[Numbers API](http://numbersapi.com/#24)
+*	[chucknorris.io](https://api.chucknorris.io/)
+*	[PokéAPI - The RESTful Pokémon API](https://pokeapi.co/)
+*	[International Space Station Current Location](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)
 
 
-## 23.	__FINAL PROJECT: SmartBrain Front-End__
 
+##	__FINAL PROJECT: SmartBrain Front-End__
 
 Animated objects library:
 *	https://www.npmjs.com/package/react-tilt
@@ -1702,75 +1723,286 @@ Image and video recognition:
 Icons library:
 *	https://icons8.com/icon
 
-## 24.	__Node.js + Express.js__
 
-Install Postman:
-*	https://www.getpostman.com/apps
 
-Express.js:
-*	https://expressjs.com/en/api.html
-
-(Getting start guide)
+##	__Node.js + Express.js__
 
 ```
-npm install body-parser
-npm install express --save
-npm install --save-dev nodemon
+//script2.js
+const largenumber = 356;
+
+module.exports = {
+    largenumber: largenumber
+};
+/*-----------------------------------*/
+
+//script.js
+const script2 = require ('./script2.js') //module you created yourself
+
+const a =script2.largenumber;
+const b = 4;
+
+console.log(a+b);                       // node script.js in terminal
 ```
 
-Node.js Reference websites:
-*	https://nodejs.org/en/
-*	https://nodejs.org/api/modules.html
+#### Built-in modules in NodeJs
 
-Storing passwords securely:
-```
-npm install bcrypt-nodejs
-```
-*	https://www.npmjs.com/package/bcrypt-nodejs
-*	https://www.npmjs.com/package/argon2
+**fs** - File System Module  
+`const c = require('fs').readFile`  Outputs content of file.  
+`const c = require('http');` this module is used to build Server.  
 
+`node <scriptfile.js>` write this to run script file.   
+`npm init -y` to make sure to have package.JSON file. here,`-y` will say yes to all the prompts  
+`npm install nodemon --save--dev`	nodemon in dev dependencies; only be used when developing. it will not be uploaded on servers.
 
-```
-$ npm install bcrypt
-```
+**To Create Server**
+```javascript
+const http = require('http');
 
-```jsx
-1.	/*
-2.	* You can copy and run the code below to play around with bcrypt
-3.	* However this is for demonstration purposes only. Use these concepts
-4.	* to adapt to your own project needs.
-5.	*/
-6.
-7.	import bcrypt from'bcrypt'
-8.	const saltRounds = 10 // increase this if you want more iterations
-9.	const userPassword = 'supersecretpassword'
-10.	const randomPassword = 'fakepassword'
-11.
-12.	const storeUserPassword = (password, salt) =>
-13.	  bcrypt.hash(password, salt).then(storeHashInDatabase)
-14.
-15.	const storeHashInDatabase = (hash) => {
-16.	   // Store the hash in your password DB
-17.	   return hash // For now we are returning the hash for testing at the bottom
-18.	}
-19.
-20.	// Returns true if user password is correct, returns false otherwise
-21.	const checkUserPassword = (enteredPassword, storedPasswordHash) =>
-22.	  bcrypt.compare(enteredPassword, storedPasswordHash)
-23.
-24.
-25.	// This is for demonstration purposes only.
-26.	storeUserPassword(userPassword, saltRounds)
-27.	  .then(hash =>
-28.	    // change param userPassword to randomPassword to get false
-29.	    checkUserPassword(userPassword, hash)
-30.	  )
-31.	  .then(console.log)
-32.	  .catch(console.error)
+const server = http.createServer(() => {
+    console.log('hello');
+});
+
+server.listen(3000);
 ```
 
+**`npm start` to view the response whereas nodemon is used to respond to file changes**
 
-## 25.	__FINAL PROJECT: SmartBrain Back-End -- Server__
+```javascript
+//Building Servers
+const http = require('http');
+
+const server = http.createServer((request, response) => {
+    console.log('header' , request.header)
+    console.log('method', request.method)
+    console.log('url' , request.url)
+
+    // response.setHeader('content-Type','text/html');
+    // response.end('<h1>Helloooo</h1>');
+    
+    const user = {
+        name: 'john',
+        hobby: 'skating'
+    }
+    response.setHeader('content-Type','application/json');
+    response.end(JSON.stringify(user)); //{"name":"john","hobby":"skating"}
+});
+
+server.listen(3000);
+```
+
+**[Express js - Documentation](https://expressjs.com/)**  
+**Routing** refers to how an application’s endpoints (URIs) respond to client requests.
+
+`npm install express` to install express package.  
+
+```js
+//express server
+const express = require('express');
+
+const app = express();
+
+//get request - route
+app.get('/',(req, res) => {
+    // res.send('Helloooooo');
+    res.send("<h1>Helloooooo</h1>");
+
+});
+app.listen(3000);
+```
+
+```js
+//express server using JSON
+const express = require('express');
+
+const app = express();
+
+//get request
+app.get('/',(req, res) => {  // here '/' depicts the route
+    const user = {
+        name:'john',
+        age:21,
+    }
+
+    res.send(user); //automatically Stringify the JSON, reduces repetition
+});
+app.listen(3000); //on refersh of localhost, or on request it displays {"name":"john","age":21}
+```
+---
+```js
+const express = require('express');
+
+const app = express();
+
+app.get('/',(req, res) => {
+    res.send("getting root");  //http://localhost:3000/
+});
+
+app.get('/profile',(req, res) => {
+    res.send("getting profile"); //http://localhost:3000/profile/
+});
+
+app.post('/',(req, res) => {
+    const user = {
+        name:'sally',
+        age:'soccer',
+    }
+
+    res.send(user); 
+});
+
+app.listen(3000);
+```
+
+#### Middleware
+**Middleware** functions are functions that have access to the request object *(req)*, the response object *(res)*, and the *next* function in the application’s **request-response cycle**. The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.  
+
+Middleware functions can perform the following tasks:  
++	Execute any code.
++	Make changes to the request and the response objects.
++	End the request-response cycle.
++	Call the next middleware in the stack.
+
+```js
+const express = require('express');
+const app = express();
+
+app.use((req, res, next) => {    //app. use() is an middleware method
+  console.log('LOGGED')
+  next();
+})
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+});
+
+app.listen(3000);
+```
+Every time the app receives a request, it prints the message “LOGGED” to the terminal.  
+The order of middleware loading is important: middleware functions that are loaded first are also executed first.  
+If *myLogger* is loaded after the route to the root path, the request never reaches it and the app doesn’t print “LOGGED”, because the route handler of the root path terminates the request-response cycle.  
+The middleware function myLogger simply prints a message, then passes on the request to the next middleware function in the stack by calling the next() function.
+
+Link:
++	[PostMan](https://www.postman.com/downloads/) platform for API development.  
+
+Node.js body parsing middleware.  
+Parse incoming request bodies in a middleware before your handlers, available under the req.body property.  
+`npm install body-parser`
+
+```js
+// IN PostMan selct the response as urlencoded or JSON file raw file format
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+app.use(bodyParser.urlencoded({extended : false}));//for encoded
+app.use(bodyParser.json());//for JSON
+
+// you can also use, this is also in in Express 4.16+
+// app.use(express.urlencoded({extended: false}));
+// app.use(express.json());
+
+app.get('/',(req, res) => {
+    res.send("getting root");  //http://localhost:3000/
+});
+
+app.get('/profile',(req, res) => {
+    res.send("getting profile"); //http://localhost:3000/profile/
+});
+
+app.post('/profile',(req, res) => {
+    console.log(req.body);
+
+    res.send('success'); //response will be success 
+});
+
+app.listen(3000);
+//PUT is used for updating
+//DELETE to delete the user
+```
+
+#### RestfulAPI
+A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. An API for a website is code that allows two software programs to communicate with each other.  
+
+```js
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+app.use(bodyParser.urlencoded({extended : false}));
+app.use(bodyParser.json());
+
+app.get('/:id',(req, res) => {
+    // console.log(req.query); //localhost:3000/?name=jack&age=31
+    // req.body
+    // req.headers
+    console.log(req.params) //for example: localhost:/1234
+    res.status(404).send("not found"); 
+});
+
+app.listen(3000);
+
+```
+
+---
+```js
+//serves simple static assets
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(express.static(__dirname + '/public')) //gives the file path
+
+app.listen(3000);
+
+```
+
+#### NODE File System Module
+```js
+const fs = require('fs'); ///readFile is Asynchronous
+//if file doesn't exist, it will create file for us.
+fs.readFile('./hello.txt', (err,data) => { //read the file and respod accordigly.
+    console.time('timecalculate');
+    if(err){
+        console.log('errooooorrrrr');
+    }
+    console.log('1', 'Async', data.toString('utf8')); //utf-8 is form of encoding
+    console.timeEnd('timecalculate'); // calculte the execution time.
+
+})
+
+const file = fs.readFileSync('./hello.txt'); //Synchronous
+console.log('2', 'Sync', file.toString());
+
+// APPEND
+// fs.appendFile('./hello.txt', 'This is so cool!', err => {  //appends given text to the file
+//     if(err){
+//         console.log(err);
+//     }
+// })
+
+// WRITE
+// fs.writeFile('bye.txt', 'sad to see you', err => {
+//     if(err) { 
+//         console.log(err)
+//     }
+// });
+
+// DELETE
+fs.unlink('./bye.txt', err => {
+    if(err){
+        console.log(err)
+    }
+    console.log('Inception');
+});
+```
+
+
+
+##	__FINAL PROJECT: SmartBrain Back-End -- Server__
 
 
 Change localhost:
@@ -1821,42 +2053,53 @@ const cors = require('cors')
 app.use(cors());
 ```
 
-## 26.	__Databases__
+##	__Databases__
+
+**Database** is an organized collection of data, so that it can be easily accessed and managed.  
+You can organize data into tables, rows, columns, and index it to make it easier to find relevant information.  
+**Database handlers** create a database in such a way that only one set of software program provides access of data to all the users.  
+
+The **main purpose** of the database is to operate a large amount of information by storing, retrieving, and managing data.  
+There are many **dynamic websites** on the World Wide Web nowadays which are handled through databases. For example, a model that checks the availability of rooms in a hotel. It is an example of a dynamic website that uses a database.
+
+There are many databases available like [PostgreSQL](https://www.postgresql.org/), MySQL, Oracle, MongoDB etc.  
+
+Modern databases are managed by the **database management system (DBMS)**.  
+**SQL** or **Structured Query Language** is used to operate on the data stored in a database. SQL depends on relational algebra and tuple relational calculus. 
+
+#### RDBMS (Relational Database Management System)
+
+The word **RDBMS** is termed as **Relational Database Management System**. It is represented as a table(also known as relations) that contains rows and column.  
+
+RDBMS is based on the Relational model;  
+A relational database contains the following components:  
+
++	Table
++	Record/ Tuple
++	Field/Column name /Attribute
++	Instance
++	Schema
++	Keys
+
+An RDBMS is a tabular DBMS that maintains the **ACID** accuracy, consistency, integrity, and security of the data.  
+
+#### What is NoSQL ?
+
+**NoSQL** is an upcoming category of Database Management Systems. Its main characteristic is its non-adherence to Relational Database Concepts. **NOSQL** means **Not only SQL**. 
+
+Concept of NoSQL databases grew with internet giants such as Google, Facebook, Amazon etc who deal with gigantic volumes of data.
+
+When you use relational database for massive volumes of data , the system starts getting slow in terms of response time. To overcome this , we could of course "scale up" our systems by upgrading our existing hardware.  
+
+The alternative to the above problem would be to distribute our database load on multiple hosts as the load increases. This is known as "scaling out".  
+
+*NOSQL database are non-relational databases that scale out better than relational databases and are designed with web applications in mind.*  
+
+>They do not use SQL to query the data and do not follow strict schemas like relational models.With NoSQL, ACID (Atomicity, Consistency, Isolation, Durability) features are not guaranteed always 
 
 
-Install PostgreSQL:
 
-*	http://www.psequel.com/
 
-	en el terminal:
-	```zsh
-	brew update
-	brew doctor
-	brew install postgresql
-	brew services start postgresql
-	brew services stop postgresql
-	createdb ‘test’
-	psql ‘test’
-	```
-
-	for windows:
-
-*	https://www.pgadmin.org/download/pgadmin-4-windows/
-*	http://www.postgresqltutorial.com/install-postgresql/
-
-	```cmd
-	@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://s3.amazonaws.com/pgcentral/install.ps1'))"
-
-	cd bigsql
-	pgc install pg10
-	pgc start pg10
-	```
-*	http://dc-apuntes.blogspot.com/2016/04/comandos-postgres-desde-cmd-windows.html
-*	https://www.w3resource.com/PostgreSQL/connect-to-postgresql-database.php
-*	https://www.youtube.com/watch?v=fD7x8hd9yE4
-
-data types
-*	https://www.techonthenet.com/postgresql/datatypes.php
 
 Terminal commands for windows:
 
@@ -1979,7 +2222,7 @@ Enter to a database with a different user:
 	psql -h localhost -d nombre_base -U nombre_usuario
 
 
-## 27.	__FINAL PROJECT: SmartBrain Back-End – Database__
+## 	__FINAL PROJECT: SmartBrain Back-End – Database__
 
 
 Tool for db connection with back-end:
@@ -1987,7 +2230,7 @@ Tool for db connection with back-end:
 *	https://knexjs.org/#Installation-node
 *	https://github.com/vitaly-t/pg-promise
 
-## 28.	__Production + Deployment__
+##	__Production + Deployment__
 
 
 Environmental variables:
