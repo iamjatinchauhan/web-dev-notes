@@ -1,23 +1,19 @@
-# Complete Web Developer Notes
-All resources and notes from the CWDC-ZTM
+# Web Developer Notes
+> Notes from CWDC-ZTM
 
 ## 	How The Internet Works
 
-Tools:
 *	Developer Tools(Inspect Element)
 
 	```
-	Cmd Prompt
 	tracert                          //generally shows for IPv6
 	tracert-4 www.google.com         //Forces IPv4 Hops
 	```
-	
-Topics:
+
 *	ISP, DNS and Servers
 *	Traceroute (Windows: tracert)
 
-	__PC>ISP>DNS-->**PC**__
-	<br>
+	__PC>ISP>DNS-->**PC**__  
 	__PC>GOOGLE SERVER --> **Files(html+css+js+...) to PC**__
 	
 	![Traceroute cmd](./img/Cmd-traceroute.png)  
@@ -48,11 +44,14 @@ Topics:
 
 ##   HTML 5
 
-
-Install a text editor (Select one):
-*	[Sublimetext](https://www.sublimetext.com/)
-*	[Atom](https://atom.io/)
-*	[VS Code](https://code.visualstudio.com/)
+<table>
+	<tr>
+		<td><strong>Text Editors</strong></td>
+		<td><a href='https://code.visualstudio.com/'>VS Code</a></td>
+		<td><a href='https://www.sublimetext.com/'>Sublimetext</a></td>
+		<td><a href='https://atom.io/'>Atom</a></td>
+	</tr>
+</table>
 
 Tags:
 *	`<html>`
@@ -70,10 +69,14 @@ Tags:
 Topics:
 *	Relative vs Absolute Path
 
-Reference websites:
-*	[W3 Schools](https://www.w3schools.com/)
-*	[MDN Web Docs](https://developer.mozilla.org/en-US/)
-*	[StackOverFlow](https://stackoverflow.com/)
+<table>
+	<tr>
+		<td><strong>Reference websites</strong></td>
+		<td><a href='https://www.w3schools.com/'>W3 Schools</a></td>
+		<td><a href='https://developer.mozilla.org/en-US/'>MDN Web Docs</a></td>
+		<td><a href='https://stackoverflow.com/'>StackOverFlow</a></td>
+	</tr>
+</table>
 
 
 
@@ -198,6 +201,7 @@ Website for color check:
 
 Website for fonts download:
 *	[Google Fonts](https://fonts.google.com/)
+
 
 
 
@@ -2059,8 +2063,7 @@ app.use(cors());
 You can organize data into tables, rows, columns, and index it to make it easier to find relevant information.  
 **Database handlers** create a database in such a way that only one set of software program provides access of data to all the users.  
 
-The **main purpose** of the database is to operate a large amount of information by storing, retrieving, and managing data.  
-There are many **dynamic websites** on the World Wide Web nowadays which are handled through databases. For example, a model that checks the availability of rooms in a hotel. It is an example of a dynamic website that uses a database.
+The **main purpose** of the database is to operate a large amount of information by storing, retrieving, and managing data. There are many **dynamic websites** on the World Wide Web nowadays which are handled through databases. For example, a model that checks the availability of rooms in a hotel. It is an example of a dynamic website that uses a database.
 
 There are many databases available like [PostgreSQL](https://www.postgresql.org/), MySQL, Oracle, MongoDB etc.  
 
@@ -2083,6 +2086,8 @@ A relational database contains the following components:
 
 An RDBMS is a tabular DBMS that maintains the **ACID** accuracy, consistency, integrity, and security of the data.  
 
+**Primary key** uniquely identify a record in the table. **Foreign key** is a field in the table that is primary key in another table. **Primary Key** can't accept null values. **Foreign key** can accept multiple null value.
+
 #### What is NoSQL ?
 
 **NoSQL** is an upcoming category of Database Management Systems. Its main characteristic is its non-adherence to Relational Database Concepts. **NOSQL** means **Not only SQL**. 
@@ -2095,131 +2100,29 @@ The alternative to the above problem would be to distribute our database load on
 
 *NOSQL database are non-relational databases that scale out better than relational databases and are designed with web applications in mind.*  
 
->They do not use SQL to query the data and do not follow strict schemas like relational models.With NoSQL, ACID (Atomicity, Consistency, Isolation, Durability) features are not guaranteed always 
+>They do not use SQL to query the data and do not follow strict schemas like relational models.With NoSQL, ACID (Atomicity, Consistency, Isolation, Durability) features are not guaranteed always   
 
+#### Database Schema
+A database schema is the **skeleton structure that represents the logical view of the entire database**. It defines how the data is organized and how the relations among them are associated. It formulates all the constraints that are to be applied on the data.
 
+A database schema **defines its entities and the relationship among them**. It contains a **descriptive detail of the database**, which can be depicted by means of schema diagrams. It’s the database designers who design the schema to help programmers understand the database and make it useful.
 
+![Database-Schema](./img/Database-Schema.png)  
 
 
-Terminal commands for windows:
 
-Login: (-U usuario)
+DBMS|RDMS
+-|-
+DBMS applications store data as file.|RDBMS applications store data in a tabular form.
+In DBMS, data is generally stored in either a hierarchical form or a navigational form.|In RDBMS, the tables have an identifier called primary key and the data values are stored in the form of tables.
+Normalization is not present in DBMS.|Normalization is present in RDBMS.
+DBMS does not apply any security with regards to data manipulation.|RDBMS defines the integrity constraint for the purpose of ACID (Atomocity, Consistency, Isolation and Durability) property.
+DBMS uses file system to store data, so there will be no relation between the tables.|In RDBMS, data values are stored in the form of tables, so a relationship between these data values will be stored in the form of a table as well.
+DBMS has to provide some uniform methods to access the stored information.|RDBMS system supports a tabular structure of the data and a relationship between them to access the stored information.
 
-	psql -h localhost -U postgres
+#### Separation of Concerns
+In computer science, **separation of concerns (SoC)** is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern. A concern is a set of information that affects the code of a computer program.  
 
-Create database:
-
-	create database database_name;
-
-Show all datatables:
-
-	\l
-
-Create a user:
-
-	create user moni with password ‘moni’;
-
-Delete a database:
-
-	drop database database_name;
-
-Connect to a database:
-
-	\c database_name;
-
-Create a schema:
-
-	create schema friends;
-
-Create a table:
-
-	create table Friends.test( firstname CHAR(15), lastname CHAR(20));
-
-	create table Friends.login(id serial not null primary key, secret varchar (100) not null, name text unique not null, entries bigint default 0, joined timestamp not null);
-
-Show all information of a table:
-
-	select * from friends.test;
-
-Describe database:
-
-	\d friends.test
-
-Insert data:
-
-	insert into friends.test values( ‘Mike’, ‘Smith’);
-
-	insert into friends.test (firstname, lastname )values( ‘Sally’, ‘Jones’);
-
-Add a column to an existing table:
-
-	alter table Friends.test add age smallint;
-
-Update data from the table:
-
-	update friends.test set age = 25 where firstname= ‘Mike’;
-
-Delete data from the table:
-
-	delete from friends.test where firstname = ‘Mike’;
-
-Delete column from a table:
-
-	alter table friends.test drop column age;
-
-Delete a table:
-
-	drop table friends.test;
-
-Functions:
-
-	select avg(age) from friends.test;
-
-Join tables:
-
-	select * from friends.test join friends.login on friends.test.firstname = friends.login.name;
-
-Exit:
-
-	\q
-
-List all users in postgresSQL database server:
-
-	\du
-
-List all tables in a schema:
-
-	\d+ schema_name.*
-
-List all tables in a database:
-
-	\dt *.*
-
-List a table in a schema:
-
-	\d+ schema_name . table_name
-
-Show description of a table, columns, type, modifications, etc.:
-
-	\d+ table_name
-
-Create a backup of a database:
-
-	pg_dump -h localhost -U postgres database_name > database_name.sql
-
-Restore a database: 1. Create a new database where the restore file is going to be placed:
-
-	psql -U postgres -d new_database_name -f respaldo.sql
-
-	*Note:  it is important to create the restore in the same root where the database copy is saved.
-
-Enter to postgres with a user different to postgres:
-
-	psql -h localhost -d postgres -U usuario
-
-Enter to a database with a different user:
-
-	psql -h localhost -d nombre_base -U nombre_usuario
 
 
 ## 	__FINAL PROJECT: SmartBrain Back-End – Database__
