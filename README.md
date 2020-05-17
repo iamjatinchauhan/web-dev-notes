@@ -2124,6 +2124,161 @@ DBMS has to provide some uniform methods to access the stored information.|RDBMS
 In computer science, **separation of concerns (SoC)** is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern. A concern is a set of information that affects the code of a computer program.  
 
 
+#### Set Path For PostgreSQL in Windows
+
+1. Search **env** it shows **Edit environment variables for your account**  
+2. Select **Environment Variables**  
+3. From the System Variables box select **PATH**  
+4. Click **New** (to add new path)  
+
+Change the PATH variable to include the **bin** directory of your PostgreSQL installation.  
+then add new path their....[for example]
+```
+C:\Program Files\PostgreSQL\12\bin
+```
+
+After that click **OK**
+
+Open **CMD/Command Prompt**. Type this to open *psql*
+```
+psql -U username database_name
+```  
+*For Example `psql -U postgres test`*
+
+Now, you will be prompted to give **Password** for the User. *(It will be hidden as a security measure).*
+
+Then you are good to go.
+-----------------------------------------------------------------------------------------
+
+
+//opening a database in command line
+psql -U postgres database_name
+```sql
+psql -U postgres test
+```
+
+//Create a database
+CREATE DATABASE database_name;
+
+//Create a table
+CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype);
+
+//to delete a table
+DROP TABLE table_name;
+
+//Connect to a database:
+\c database_name;
+
+//Show all datatables:
+\l
+
+//to show list of relations in cmd (describe database)
+\d
+
+//EXIT - to go back to the terminal
+\q
+
+//List all users in postgresSQL database server:
+\du
+
+//List all tables in a schema:
+\d+ schema_name.*
+
+//Insert Data
+INSERT INTO table_name (column-1, column_2, column_3) VALUES (value_1, 'value_2', value_3);
+```
+INSERT INTO users (name, age, birthday) VALUES ('john', 21, '1980-01-25');
+```
+
+//to view table contents (Show all information of a table)
+SELECT * FROM table_name;
+```
+SELECT * FROM users;
+```
+
+//to view selected column of table contents
+SELECT columname1, columnname2 FROM table_name;
+
+//to Add a column to an existing table
+ALTER TABLE table_name ADD column datatype;
+```
+ALTER TABLE users ADD score smallint;
+```
+
+//to ALTER and update
+UPDATE table_name
+SET some_column = some_value
+WHERE some_column = some_value;
+
+```
+UPDATE users SET score = 50 WHERE name='john';
+UPDATE users SET score = 100 WHERE name='sally' AND name='jared';
+UPDATE users SET score = 100 WHERE name='sally' OR name='jared';
+```
+
+
+-------------------------
+//Conditionals
+```
+SELECT * FROM users WHERE name LIKE 'j%';
+SELECT * FROM users WHERE name LIKE '%y';
+```
+
+//show the table as per the scores in decending order
+```
+SELECT * FROM users ORDER BY score DESC;
+SELECT * FROM users ORDER BY score ASC;
+```
+
+//functions
+SELECT AVG(score) FROM users;
+SELECT SUM(age) FROM users;
+SELECT count(name) FROM users;
+
+
+//create a table
+CREATE TABLE login (
+	ID serial NOT NULL PRIMARY KEY,
+	secret VARCHAR (100) NOT NULL,
+	name text UNIQUE NOT NULL
+);
+
+
+//JOIN tables
+```
+//example
+SELECT * FROM users JOIN login ON users.name = login.name;
+```
+
+//Delete data from the table
+```
+DELETE FROM users WHERE name='rob';
+```
+
+Delete column from a table:
+```
+ALTER TABLE test DROP COLUMN age;
+```
+
+//delete a table
+DROP TABLE table_name;
+```SQL
+DROP TABLE login;
+DROP TABLE users;
+```
+
+//Delete a database:
+DROP DATABASE database_name;
+
+//List a table in a schema:
+\d+ schema_name . table_name
+
+
+
+
+
+
+
 
 ## 	__FINAL PROJECT: SmartBrain Back-End – Database__
 
