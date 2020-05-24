@@ -1453,7 +1453,9 @@ import X, { myA as myX, Something as XSomething } from './A'
 The default exports tend to be used for whatever you normally expect to get from the module. The named exports tend to be used for utilities that might be handy, but aren’t always necessary. However it is up to you to choose how to export things: for example, a module might have no default export at all.  
 [This is a great guide to ES modules, explaining the difference between default and named exports.](https://2ality.com/2014/09/es6-modules-final.html)
 
-**`npm run build`**	creates a `build` directory with a production build of your app.  
+**`npm start`**	Runs the app in the development mode.  
+**`npm test`**	Launches the test runner in the interactive watch mode.   
+**`npm run build`**	Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.   
 **`npm audit`**	Scan your project for vulnerabilities and just show the details, without fixing anything  
 **`npm audit fix`**	Scan your project for vulnerabilities and automatically install any compatible updates to vulnerable dependencies  
 **`npm audit fix --force`**	Have audit fix install semver-major updates to toplevel dependencies, not just semver-compatible ones  
@@ -1697,35 +1699,6 @@ Links:
 *	[chucknorris.io](https://api.chucknorris.io/)
 *	[PokéAPI - The RESTful Pokémon API](https://pokeapi.co/)
 *	[International Space Station Current Location](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)
-
-
-
-##	__FINAL PROJECT: SmartBrain Front-End__
-
-Animated objects library:
-*	https://www.npmjs.com/package/react-tilt
-	```
-	npm install –save react-tilt
-	```
-
-Background patterns:
-*	http://lea.verou.me/css3patterns/
-
-
-Animated background library:
-*	https://vincentgarreau.com/particles.js/
-
-	```
-	npm install react-particles-js
-	```
-
-Image and video recognition:
-*	https://clarifai.com/developer/guide/
-	```
-	npm install clarifai
-	```
-Icons library:
-*	https://icons8.com/icon
 
 
 
@@ -2005,37 +1978,17 @@ fs.unlink('./bye.txt', err => {
 ```
 
 
+#### Back-End -- Server
 
-##	__FINAL PROJECT: SmartBrain Back-End -- Server__
+[Change localhost](https://stackoverflow.com/questions/40714583/how-to-specify-a-port-to-run-a-create-react-app-based-project)
 
+If you don't want set environment variable, other option - modify scripts part of package.json from: `"start": "react-scripts start"`  
 
-Change localhost:
-*	https://stackoverflow.com/questions/40714583/how-to-specify-a-port-to-run-a-create-react-app-based-project
+or (maybe) more general solution by to:`"start": "export PORT=3006 react-scripts start"`  
 
-If you don't want set environment variable, other option - modify scripts part of package.json from:
+Windows solution to:`"start": "set PORT=3006 && react-scripts start"`
 
-```"start": "react-scripts start"```
-
-Linux (tested on Ubuntu 14.04/16.04) and MacOS (tested by @aswin-s on MacOS Sierra 10.12.4) to:
-
-```"start": "PORT=3006 react-scripts start"```
-
-or (maybe) more general solution by @IsaacPak to:
-
-```"start": "export PORT=3006 react-scripts start"```
-
-Windows @JacobEnsor solution to:
-
-```"start": "set PORT=3006 && react-scripts start"```
-
-
-Front-end and back-end connection:
-*	https://www.npmjs.com/package/cors
-	```
-	npm install cors
-	```
-
-Front-end:
+**Front-end:**
 
 ```Javascript
 fetch('http://localhost:3000/image', {
@@ -2050,12 +2003,15 @@ fetch('http://localhost:3000/image', {
 	this.setState(Object.assign(this.state.user, { entries:count}))
 })
 ```
-Back-end:
+
+**Back-end:**
 
 ```Javascript
 const cors = require('cors')
 app.use(cors());
 ```
+
+
 
 ##	__Databases__
 
@@ -2275,26 +2231,13 @@ DROP DATABASE database_name;
 
 
 
-
-
-
-
-
-## 	__FINAL PROJECT: SmartBrain Back-End – Database__
-
-
-Tool for db connection with back-end:
-*	https://knexjs.org/
-*	https://knexjs.org/#Installation-node
-*	https://github.com/vitaly-t/pg-promise
-
 ##	__Production + Deployment__
 
 
 Environmental variables:
 *	http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-windows-command-line-and-registry/
 
-### PORT
+#### PORT
 
 On terminal:
 
@@ -2309,7 +2252,7 @@ On server.js:
 	})
 ```
 
-### DATABASE
+#### DATABASE
 
 On terminal:
 
@@ -2325,23 +2268,17 @@ On server.js:
 	})
 ```
 
-### OTHER OPTION
+#### OTHER OPTION
 
 On terminal:
 
 	fish
 	-->env DATABASE_URL-‘hello’ node server.js
 
-Deploy apps:
-
-Heroku:
-
+#### Deploy apps:
+Heroku:  
 *	https://www.heroku.com/
 *	https://devcenter.heroku.com/articles/git
-
-Not the best one:
-*	https://www.hostgator.com/promo/snappy60?utm_source=google&utm_medium=brandsearch&kclickid=cfe89874-3c6a-404e-b321-fc3e56f9ec2b&gclid=CjwKCAjwsJ3ZBRBJEiwAtuvtlIkFb-qOw3HN_JpH3AAkmYwKhk_L0y0stl7J1CFRR8FRltvmvhwXPBoCATIQAvD_BwE
-
 
 
 Commands for heroku on backend folder:
