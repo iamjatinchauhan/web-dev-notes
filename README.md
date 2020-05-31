@@ -1,6 +1,9 @@
 # Web Developer Notes
 > Notes from CWDC-ZTM
 
+
+
+
 ## 	How The Internet Works
 
 *	Developer Tools(Inspect Element)
@@ -32,6 +35,7 @@
 
 
 
+
 ## 	History Of The Web
 
 *    [Maps that explain the Internet](https://www.vox.com/a/internet-maps)
@@ -39,6 +43,7 @@
 *    [First Webpage in the world](http://info.cern.ch/hypertext/WWW/TheProject.html)
 
 ##### Optional Videos: [Crash Course - Computer Science](https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=2&t=0s)
+
 
 
 
@@ -80,6 +85,7 @@ Topics:
 
 
 
+
 ## Advanced HTML 5
 
 
@@ -102,6 +108,7 @@ Semantic Elements
 
 Topics:
 *	Chrome View Source
+
 
 
 
@@ -241,6 +248,7 @@ Reference websites:
 
 
 
+
 ## Bootstrap 4 & Templates
 
 ### [Bootstrap](https://getbootstrap.com/) : Search for Documentation
@@ -264,6 +272,7 @@ Installing Github:
 
 
 
+
 ## 	CSS Grid + CSS Layout
 
 ![Grid-Layout-Cheatsheet](./img/Grid-Layout-Cheatsheet.png)
@@ -280,7 +289,7 @@ Cheat Sheet:
     }
 }
 ```
-**Normalize css** - provides better cross-browser consistency in the default styling of HTML elements.\
+**Normalize css** - provides better cross-browser consistency in the default styling of HTML elements.  
 **Viewport Height `(vh)`** — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height.
 
 Exercise:
@@ -289,6 +298,7 @@ Exercise:
 Free Design & Illustration resources:
 *	[Interfacer - high quality free design resources](https://interfacer.xyz/)
 *	[Undraw - Open-source illustrations](https://undraw.co/)
+
 
 
 
@@ -406,12 +416,12 @@ ___________
 * `let` (new in ECMAScript 6)
 * `const` (new in ECMAScript 6)
 
-**JAVASCRIPT CONDITIONALS**
-`if`
-`else`
-`else if`
-`ternary operator`  // condition ? exp1 : exp2;
-`switch`
+**JAVASCRIPT CONDITIONALS**  
+`if`  
+`else`  
+`else if`  
+`ternary operator`  // condition ? exp1 : exp2;  
+`switch`  
 
 
 **JAVASCRIPT LOGICAL OPERATORS**
@@ -435,7 +445,7 @@ name("Rob");
 ---------------
 <!-- () => (new in ECMAScript 6) -->
 ```
-DRY - DO NOT REPEAT YOURSELF  
+**DRY** - DO NOT REPEAT YOURSELF  
 > `console. log()` is a function in JavaScript which is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.
 
 **JAVASCRIPT DATA STRUCTURES**
@@ -537,6 +547,8 @@ Method			|Description
 **DRY** - *Do not Repeat Yourself*
 
 
+
+
 ## DOM Manipulation
 When a web page is loaded, the browser creates a Document Object Model of the page.  
 
@@ -628,6 +640,9 @@ Reference websites:
 **Declarative programming** is a programming paradigm … that expresses the logic of a computation without describing its control flow.  
 **Imperative programming** is a programming paradigm that uses statements that change a program’s state.
 
+
+
+
 ## 	__Advanced Javascript__
 
 **Scope**
@@ -678,6 +693,7 @@ Anything that is not global is considered local, but subjective.
 > JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript. JavaScript is considered as one of the most popular implementations of ECMAScript.
 
 *	let + const
+
 ```javascript
 const player = 'booby';  //const variable cannot be reassigned
 	// if using a variable that doesn't change probably use const ; otherwise use let.
@@ -693,6 +709,7 @@ console.log('outside', wizardLevel);         //outside true
 ```
 
 *	Destructuring
+
 ```javascript
 const obj = {
 	player: 'bobby';
@@ -726,6 +743,7 @@ const obj = {
 ```
 
 *	Template Strings
+
 ```
 >	const name = "Sally";
 	const age = 34;
@@ -741,6 +759,7 @@ const obj = {
 ```
 
 *	default arguments
+
 ```javascript
 function greet(name='', age=30, pet ='cat'){
 	return `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have.`
@@ -755,6 +774,7 @@ function greet(name='', age=30, pet ='cat'){
 ```
 
 *	Symbol
+
 ```
 //symbols are used because they create unique identity, so you could be sure that there is no conflict.
 >	let sym1 = Symbol();
@@ -852,7 +872,8 @@ The process of converting a function that takes multiple arguments into a functi
 ```
 
 **Compose**
->act of putting two function together to form a third function where the output of one function is input of another function.  
+>act of putting two function together to form a third function where the output of one function is input of another function.
+
 ```
 const compose = (f,g) => (a) => f(g(a));
 // f(g(a))  ->  f(sum(a))  ->  f(6)  -> sum(6)  ->  7
@@ -867,7 +888,8 @@ compose(sum, sum)(5);    //7
 1. Deterministic --> always produces the same results given the same inputs  
 2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.
 
-**Advanced Array**  
+**Advanced Array** 
+
 ```javascript
 const array = [1,2,10,16];
 const double = [];
@@ -879,6 +901,7 @@ console.log(double);
 ```
 
 **map, filter, reduce**  
+
 ```javascript
 const array = [1,2,10,16];
 const double = [];
@@ -908,10 +931,10 @@ const reduceArray = array.reduce((accumulator, num) => {
 	//**accumulator**  - something where we can store the information that hapens in the body of function.
 }, 0); //Accumulator is required to be set to a starting value. Here it is 0.
 console.log('reduce', reduceArray);	//reduce 29
-
 ```
 
 **reference type**  
+
 ```javascript
 var object1 = {value: 10};
 var object2 = object1; //object 2 reference object 1
@@ -924,7 +947,8 @@ object2.value;         // 15
 object3.value;         // 10
 ```
 
-context (vs scope)  -  where we are within object
+**context (vs scope)  -  where we are within object**
+
 ```javascript
 const object4 = {
     a: function() {
@@ -978,6 +1002,7 @@ Object { name: "shawn", type: "Dark Magic" }
 ```
 
 **Pass By value vs Pass By reference**  
+
 ```javascript
 var a = 5;
 var b = a;
@@ -1032,6 +1057,7 @@ console.log(superclone);     //{a:'a', b:'b', c:{ deep : 'try and copy me'}}
 ```
 
 **TYPE COERCION**  
+
 ```javascript
 /*The difference between == and === is that: == converts the variable values to the same type before performing comparison. This is called type coercion. === does not do any type conversion (coercion) and returns true only if both values and types are identical for the two variables being compared.*/
 1 == '1' //true
@@ -1046,6 +1072,7 @@ NaN === NaN //false    ?NaN means Not a Number
 *   [ECMA - Comparison Algorithm](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3)
 
 **ES7** 
+
 ```javascript
 const pets = {'cat','dog','bat'};
 pets.include('dog');   //true
@@ -1191,6 +1218,8 @@ Modules
 *   [JavaScript. The Core: 2nd Edition](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/)
 
 
+
+
 ##  __Command Line__
 
 ### FOR MAC OR LINUX:
@@ -1238,6 +1267,7 @@ tree	| 	display directories and subdirectories as a nesting tree
 
 
 
+
 ## 	__Git + Github + Open Source Projects__
 
 [Install Git](https://www.atlassian.com/git/tutorials/install-git)  
@@ -1263,6 +1293,7 @@ Command | Description
 `git push origin "[branch name]"`   | 	Push a branch to your remote repository.
 `git init "[repository name]"`  	| 	To start a new repository.
 `git rm -r "[file-name.txt]" `		| 	Remove a file (or folder)
+`git reset --hard HEAD^`	`git push origin -f`	|	Removing the last commit
 
 
 Do you have to always fork the Open Source project every time master get's updated? What happens if somebody makes an update to the original project and now your forked project is out of sync and outdated? Luckily for you, there is an easy way to always make sure your fork has the most up to date version of the original project. Here is how:
@@ -1298,6 +1329,8 @@ Once you are in your forked project directory in your command prompt....
 	```
 
 
+
+
 ## 	__NPM + NPM Scripts__
 *npm is the world's largest Software Registry.Open-source developers use npm to share software.*  
 
@@ -1306,6 +1339,7 @@ Once you are in your forked project directory in your command prompt....
 
 **npm versions**
 npm is a separate project from Node.js, and tends to update more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to update your npm. Luckily, npm knows how to update itself!   
+
 To update your npm, type this into your terminal:	`npm install npm@latest -g`  
 
 While using npm or node commands, if you ever get permission issue, you may need to run the commands with `sudo` in front of each command.  
@@ -1326,6 +1360,7 @@ Reference websites:
 *	[npm react package](https://www.npmjs.com/package/react)
 *	[lodash](https://lodash.com/)
 *	[npm semver calculator](https://semver.npmjs.com/)
+
 
 
 
@@ -1451,13 +1486,19 @@ We can also assign them all different names when importing:
 import X, { myA as myX, Something as XSomething } from './A'
 ```
 The default exports tend to be used for whatever you normally expect to get from the module. The named exports tend to be used for utilities that might be handy, but aren’t always necessary. However it is up to you to choose how to export things: for example, a module might have no default export at all.  
+
 [This is a great guide to ES modules, explaining the difference between default and named exports.](https://2ality.com/2014/09/es6-modules-final.html)
 
 **`npm start`**	Runs the app in the development mode.  
+
 **`npm test`**	Launches the test runner in the interactive watch mode.   
+
 **`npm run build`**	Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.   
+
 **`npm audit`**	Scan your project for vulnerabilities and just show the details, without fixing anything  
+
 **`npm audit fix`**	Scan your project for vulnerabilities and automatically install any compatible updates to vulnerable dependencies  
+
 **`npm audit fix --force`**	Have audit fix install semver-major updates to toplevel dependencies, not just semver-compatible ones  
 
 Links:
@@ -1483,13 +1524,16 @@ Links:
 
 
 
+
 ## __HTTP/JSON/AJAX + Asynchronous Javascript__
 
 ### HTTP
-The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.  
+The **Hypertext Transfer Protocol (HTTP)** is designed to enable communications between clients and servers.  
 HTTP works as a request-response protocol between a client and server.  
 A web browser may be the client, and an application on a computer that hosts a web site may be the server.  
-Example: A client (browser) submits an HTTP request to the server; then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.  
+
+Example:   
+A client (browser) submits an HTTP request to the server; then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.  
 
 HTTP Methods|What it does?
 -|-
@@ -1675,9 +1719,13 @@ function sum (a, b, c, d, e) {
 ```
 **[ECMAScript-new-features-list](https://github.com/daumann/ECMAScript-new-features-list)**
 
+
+
+
 ## __Backend Basics__
 
 Backend development languages handle the 'behind-the-scenes' functionality of web applications. It's code that connects the web to a database, manages user connections, and powers the web application itself. Backend development works in tandem with the front end to deliver the final product to the end user.
+
 
 
 
@@ -1699,6 +1747,7 @@ Links:
 *	[chucknorris.io](https://api.chucknorris.io/)
 *	[PokéAPI - The RESTful Pokémon API](https://pokeapi.co/)
 *	[International Space Station Current Location](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)
+
 
 
 
@@ -1977,8 +2026,36 @@ fs.unlink('./bye.txt', err => {
 });
 ```
 
+Storing passwords securely:`npm install bcrypt-nodejs`
 
-#### Back-End -- Server
+#### Storing User Passwords Securely
+
+**Step 1:**  
+Your minimum password length should be at least 8 characters, and the maximum as large are 64 characters for the user. The longer the password that the user sets, the better.   
+Do accept both ASCII and UNICODE characters and don't set rules about which characters should and shouldn’t be included (P@ssword1 is NOT a good password). 
+Instead, encourage people to set long passwords with high entropy (upper case letters, lower case letters, digits, special characters).  
+
+**Don’t allow password hints.**  
+*Avoid security questions. Although this is good for an extra layer of security, the information can be easily discovered by an attacker in this day and age.*   
+It’s just an extra implementation step; a step that a user has to take while offering very little added security.    
+
+**Use 2 factor authentication if you want an extra layer of security** in your application, but avoid using SMS as this can be easily hacked to have the attackers phone receive the confirmation code.  
+
+Once the user has registered, there are two things to keep in mind:    
+*Don’t let the user know the password was incorrect when logging in. Instead, mention that the username and password combination is incorrect.* You want to minimize information that an attacker can get, and the less they know (such as that the user exists), the better.  
+The only time passwords should be reset by an administrator is when they suspect that an account has been compromised. Otherwise, passwords should only be reset by a user when he or she has forgotten their credentials.  
+
+**Step 2:**  
+Now that the user has entered a good password, they will submit the form and trust you to take care of their credentials. In the second step, you are transmitting the form (account sign up) data in a POST body to your server. You do it this way for a few reasons:  
+**POST requests are never cached. POST request will not remain in the browser history. No restriction on data length**   
+Most importantly, use HTTPS so that this data will be encrypted and cannot be attacked by someone who is observing your network traffic. HTTPS is the regular HTTP protocol with SSL/TLS encryption which means that only the server can read what you send it, and only you can read what the server sends back.  
+
+**Step 3:**  
+Now that we have received the username and password to our server it is time to do a few things. Before we get started though, always remember to never store passwords in plaintext. Instead, you will want to use some of these popular npm packages to hash the password: argon2, scrypt, or bcrypt.  
+
+
+
+### Back-End -- Server
 
 [Change localhost](https://stackoverflow.com/questions/40714583/how-to-specify-a-port-to-run-a-create-react-app-based-project)
 
@@ -2010,6 +2087,7 @@ fetch('http://localhost:3000/image', {
 const cors = require('cors')
 app.use(cors());
 ```
+
 
 
 
@@ -2106,136 +2184,135 @@ Now, you will be prompted to give **Password** for the User. *(It will be hidden
 Then you are good to go.
 -----------------------------------------------------------------------------------------
 
-
-//opening a database in command line
+#### SQL queries
+**opening a database in command line**  
 psql -U postgres database_name
-```sql
+```SQL
 psql -U postgres test
 ```
 
-//Create a database
+**Create a database**  
 CREATE DATABASE database_name;
 
-//Create a table
+**Create a table**  
 CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype);
 
-//to delete a table
+**Delete a table**  
 DROP TABLE table_name;
 
-//Connect to a database:
+**Connect to a database**  
 \c database_name;
 
-//Show all datatables:
+**Show all datatables**  
 \l
 
-//to show list of relations in cmd (describe database)
+**to show list of relations in cmd (describe database)**  
 \d
 
-//EXIT - to go back to the terminal
+**EXIT - to go back to the terminal**  
 \q
 
-//List all users in postgresSQL database server:
+**List all users in postgresSQL database server**  
 \du
 
-//List all tables in a schema:
+**List all tables in a schema**  
 \d+ schema_name.*
 
-//Insert Data
+**Insert Data**  
 INSERT INTO table_name (column-1, column_2, column_3) VALUES (value_1, 'value_2', value_3);
-```
+```SQL
 INSERT INTO users (name, age, birthday) VALUES ('john', 21, '1980-01-25');
 ```
 
-//to view table contents (Show all information of a table)
-SELECT * FROM table_name;
-```
+**View table contents (Show all information of a table)**  
+SELECT * FROM table_name;  
+```SQL
 SELECT * FROM users;
 ```
 
-//to view selected column of table contents
-SELECT columname1, columnname2 FROM table_name;
+**To View selected column of table contents**  
+SELECT columname1, columnname2 FROM table_name;  
 
-//to Add a column to an existing table
-ALTER TABLE table_name ADD column datatype;
-```
+**to Add a column to an existing table**  
+ALTER TABLE table_name ADD column datatype;  
+```SQL
 ALTER TABLE users ADD score smallint;
 ```
 
-//to ALTER and update
-UPDATE table_name
-SET some_column = some_value
-WHERE some_column = some_value;
+**to ALTER and update**  
+UPDATE table_name  
+SET some_column = some_value  
+WHERE some_column = some_value;  
 
-```
+```SQL
 UPDATE users SET score = 50 WHERE name='john';
 UPDATE users SET score = 100 WHERE name='sally' AND name='jared';
 UPDATE users SET score = 100 WHERE name='sally' OR name='jared';
 ```
 
 
--------------------------
-//Conditionals
-```
+**Conditionals**  
+```SQL
 SELECT * FROM users WHERE name LIKE 'j%';
 SELECT * FROM users WHERE name LIKE '%y';
 ```
 
-//show the table as per the scores in decending order
-```
+**Show the table as per the scores in decending order**  
+```SQL
 SELECT * FROM users ORDER BY score DESC;
 SELECT * FROM users ORDER BY score ASC;
 ```
 
-//functions
-SELECT AVG(score) FROM users;
-SELECT SUM(age) FROM users;
-SELECT count(name) FROM users;
+**Functions**  
+SELECT AVG(score) FROM users;  
+SELECT SUM(age) FROM users;  
+SELECT count(name) FROM users;  
 
 
-//create a table
-CREATE TABLE login (
-	ID serial NOT NULL PRIMARY KEY,
-	secret VARCHAR (100) NOT NULL,
-	name text UNIQUE NOT NULL
-);
+**Create a table**  
+CREATE TABLE login (  
+	ID serial NOT NULL PRIMARY KEY,  
+	secret VARCHAR (100) NOT NULL,  
+	name text UNIQUE NOT NULL  
+);  
 
 
-//JOIN tables
-```
+**JOIN tables**  
+```SQL
 //example
 SELECT * FROM users JOIN login ON users.name = login.name;
 ```
 
-//Delete data from the table
-```
+**Delete data from the table**  
+```SQL
 DELETE FROM users WHERE name='rob';
 ```
 
-Delete column from a table:
-```
+**Delete column from a table**  
+```SQL
 ALTER TABLE test DROP COLUMN age;
 ```
 
-//delete a table
-DROP TABLE table_name;
+**Delete a table**  
+DROP TABLE table_name;  
 ```SQL
 DROP TABLE login;
 DROP TABLE users;
 ```
 
-//Delete a database:
-DROP DATABASE database_name;
+**Delete a database**  
+DROP DATABASE database_name;  
 
-//List a table in a schema:
-\d+ schema_name . table_name
+**List a table in a schema**  
+\d+ schema_name . table_name  
+
 
 
 
 ##	__Production + Deployment__
 
 
-Environmental variables:
-*	http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-windows-command-line-and-registry/
+[Environmental variables](http://www.dowdandassociates.com/blog/content/howto-set-an-environment-variable-in-windows-command-line-and-registry/)
 
 #### PORT
 
@@ -2276,10 +2353,11 @@ On terminal:
 	-->env DATABASE_URL-‘hello’ node server.js
 
 #### Deploy apps:
-Heroku:  
-*	https://www.heroku.com/
-*	https://devcenter.heroku.com/articles/git
+[Heroku](https://www.heroku.com/)    
+[Heroku article git](https://devcenter.heroku.com/articles/git)  
+[Netlify](https://www.netlify.com/)    
 
+**[Deploy Readme](./img/Readme.md)**  
 
 Commands for heroku on backend folder:
 Install heroku:
@@ -2288,7 +2366,7 @@ npm install -g heroku
 heroku login
 heroku create
 ```
-In the terminal there will be a URL : ” https://limitless-bastion-10041.herokuapp.com/”
+In the terminal there will be a URL : "https://infinite-sands-25101.herokuapp.com/"
 ```
 git remote –v
 git push origin master
@@ -2308,10 +2386,7 @@ heroku open
 ```
 
 
-Connect to pg database:
-*	https://devcenter.heroku.com/articles/heroku-postgresql
-*	https://docs.aws.amazon.com/es_es/AmazonRDS/latest/UserGuide/USER_ConnectToPostgreSQLInstance.html
-*	https://msdn.microsoft.com/en-us/library/ms175043(v=sql.120).aspx#SSMSProcedure
+[Connect to pg database](https://devcenter.heroku.com/articles/heroku-postgresql)
 
 Create a new postgres database using Heroku:
 
@@ -2321,3 +2396,14 @@ heroku addons
 heroku info
 heroku pg:psql
 ```
+
+
+**What value do you bring to your company/startup/business?**   
+Developer is someone who brings an incremental benefit to the table and makes people feel around him better.  
+If you are one of the few people who can bring order of magnitude (some people love the idea of 10x ) value to your company or business, you are a developer. Developer is not just another job title, but rather, the ability to use your experiences to provide real benefit to the stakeholders.
+
+Understand the __WHY__ of a technology. 
+Why does this problem exist? Why does this framework exist? What problem is this library solving?  
+As a developer, you need to have a good sense of all of the tools and ideas that can benefit the development lifecycle and pick the tools that will have the biggest positive gain on a project.
+
+**Never stop reading and Never stop learning, but also know what’s a valuable use of your time and what isn’t.**
