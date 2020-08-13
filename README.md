@@ -375,6 +375,8 @@ __JAVASCRIPT TYPES__
 > NaN     //means not a number
 ```
 
+![Strings Cheatsheet](./CheatSheets/Strings-Cheatsheet.jpg)
+
 3. Boolean
 
 ```
@@ -528,6 +530,56 @@ Method          |Description
 `toString()`    |Converts an array to a string, and returns the result
 `unshift()`     |Adds new elements to the beginning of an array, and returns the new length
 `valueOf()`     |Returns the primitive value of an array
+
+![Array Cheatsheet](./CheatSheets/Array-Cheatsheet.jpg)
+
+```javascript
+//popular javascript array methods
+
+//create array
+let fruits = ['Apple', 'Banana']
+console.log(fruits.length)  //2
+
+//Access an array item using the index position
+let first =fruits[0]  //Apple
+let last = fruits[fruits.length -1]  //Banana
+
+//loop over an array
+fruits.forEach(function(item, index, array) {
+  console.log(item, index)
+})
+//Apple 0
+//Banana 1
+
+//add an item to the end of an array
+let newLength = fruits.push('Orange')
+// ["Apple", "Banana", "Orange"]
+
+//remove an item from the end of an array
+//remove Orange (from the end)
+let last = fruits.pop()
+// ["Apple", "Banana"]
+
+//remove an item from the beginning of an array
+//remove Apple from the front
+let first = fruits.shift()  //["Banana"]
+
+//add an item to the beginning of an array
+//add to the front
+let newLength = fruits.unshift('Strawberry')
+// ["Strawberry" "Banana"]
+
+//find the index of an item in the array
+fruits.push('Mango')
+// ["Strawberry", "Banana", "Mango"]
+let pos =fruits.indexOf('Banana')
+//1
+
+//remove an item by index position
+//this is how to remove an item
+let removeItem = fruits.splice(pos, 1)
+//["Strawberry", "Mango"]
+```
 
 **JAVASCRIPT LOOPING**
 
@@ -968,6 +1020,28 @@ const reduceArray = array.reduce((accumulator, num) => {
 console.log('reduce', reduceArray); //reduce 29
 ```
 
+```javascript
+//ARRAY.REDUCE()
+
+/*
+The reduce() method executes a reduce function(that you provide) on each element of the array, resulting in single output value.
+
+The reducer function takes four arguments
+Accumulator, Current Value, Current Index, SOurce Array.
+
+Your reducer function's returned value is assigned to the accumulator, whose value is
+rememebered across each iteration throughout the array, and ultimately becomes the final,
+single resulting value.
+*/
+
+//Example
+const arr = [1,2,3,4]
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+// 5 + 1 + 2 + 3 + 4
+console.log(arr.reduce(reducer, 5));
+// expected output: 15
+```
+
 **reference type**
 
 ```javascript
@@ -1376,15 +1450,24 @@ Once you are in your forked project directory in your command prompt....
 **npm versions**
 npm is a separate project from Node.js, and tends to update more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to update your npm. Luckily, npm knows how to update itself!
 
+**What does the `^` and `~` mean?**  
+A version often has a `^` in front of it (e.g. `^16.8.6`). This means that the latest minor version can be safely installed. So in this example, `^16.12.1` can be safely installed if this was the newest version in `16.x`.
+
+Sometimes a version has a `~` in front of it (e.g. `~16.8.6`). This means that only the latest patch version can be safely installed. So in this example, `^16.8.12` can be safely installed if this was the newest version in `16.8.x`.
+
 To update your npm, type this into your terminal: `npm install npm@latest -g`  
 
 While using npm or node commands, if you ever get permission issue, you may need to run the commands with `sudo` in front of each command.  
 
-Command                     |   what it does
---                          |   --
-`npm init`                  |   create package.json file
-`npm install`               |   install npm package locally
-`npm install –g browserify` |   install npm package globally
+Command                                  | what it does
+--                                       | --
+`npm init`                               | create package.json file
+`npm install`                            | install npm package locally
+`npm install –g browserify`              | install npm package globally
+`npm outdated`                           | discover dependencies that are out of date
+`npm update`                             | dependencies can be safely updated to the wanted version
+`npm install <packagename>@latest`       | upgrade to the latest major version of a package
+`npx npm-check-updates -u` `npm install` | upgrade all dependencies to their latest major versions
 
 Install node and npm:
 
