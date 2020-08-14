@@ -329,7 +329,7 @@ Safari          :       JavaScript Core
 Microsoft Edge  :       Chakra
 ```
 
-__JAVASCRIPT TYPES__
+**JavaScript Types**
 
 1. Number
 
@@ -440,6 +440,7 @@ ___________
 >= is used for assigning values to a variable in JavaScript. == is used for comparison between two variables irrespective of the datatype of variable. === is used for comparision between two variables but this will check strict type, which means it will check datatype and compare two values
 
 **JAVASCRIPT VARIABLES**
+
 * `var`
 * `let` (new in ECMAScript 6)
 * `const` (new in ECMAScript 6)
@@ -451,13 +452,13 @@ ___________
 `ternary operator`  // condition ? exp1 : exp2;  
 `switch`  
 
-
 **JAVASCRIPT LOGICAL OPERATORS**
 `&&`
 `||`
 `!`
 
 **JAVASCRIPT FUNCTIONS**
+
 ```javascript
 var a = function name() {};   //function expression    //Anonymous function
 ---------------
@@ -880,6 +881,16 @@ function greet(name='', age=30, pet ='cat'){
 ```
 
 **Arrow Function**
+
+```javascript
+//How to write an arrow Function.
+
+//Regular Function
+let myCustomFunction = function() {}
+
+//Arrow Function
+let myCustomFunction = () => {}
+```
 
 ```
 > function add(a, b) {
